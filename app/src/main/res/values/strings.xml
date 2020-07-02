@@ -17,4 +17,5 @@
     <string name="title_activity_budget_form">Budget</string>
     <string name="title_activity_main">Main activity</string>
     <string name="title_activity_budget_monitering">Budget activi</string>
+    <string name="title_activity_budget_monitoring_records">Bud monitor</string>
 </resources>
