@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".BudgetFormActivity"></activity>
         <activity
             android:name=".AgricListActivity"
             android:label="@string/title_activity_agric_list"
@@ -17,7 +18,8 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.ygba.youthgobudget.FrontActivity" />
-        </activity>        <activity
+        </activity>
+        <activity
             android:name=".MedicalFormActivity"
             android:label="@string/title_activity_medical_form"
             android:parentActivityName=".FrontActivity"
