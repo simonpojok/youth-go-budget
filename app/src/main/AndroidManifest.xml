@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BudgetConsutanceActivity"></activity>
         <activity
+            android:name=".BudgetConsutanceActivity"
+            android:label="@string/title_activity_budget_consutance"
+            android:parentActivityName=".FrontActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.ygba.youthgobudget.FrontActivity" />
+        </activity>        <activity
             android:name=".PollAnswerActivity"
             android:label="@string/title_activity_poll_answer"
             android:parentActivityName=".PollsActivity"
