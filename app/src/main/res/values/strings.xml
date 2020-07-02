@@ -11,4 +11,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_education">some dummy</string>
     <string name="title_activity_medical_record">Medical record</string>
+    <string name="title_activity_medical_form">Medical form</string>
+    <string name="title_activity_front">Fromt activity</string>
+    <string name="title_activity_agric_list"><![CDATA["        <activity             android:name=\".AgricListActivity\"             android:label=\"@string/title_activity_agric_list\"             android:parentActivityName=\".FrontActivity\"             android:theme=\"@style/AppTheme.NoActionBar\">             <meta-data                 android:name=\"android.support.PARENT_ACTIVITY\"                 android:value=\"com.youthgobudget.FrontActivity\" />         </activity>"]]></string>
 </resources>

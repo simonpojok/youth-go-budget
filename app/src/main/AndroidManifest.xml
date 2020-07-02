@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".AgricListActivity"
+            android:label="@string/title_activity_agric_list"
+            android:parentActivityName=".FrontActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.ygba.youthgobudget.FrontActivity" />
+        </activity>        <activity
             android:name=".MedicalFormActivity"
             android:label="@string/title_activity_medical_form"
             android:parentActivityName=".FrontActivity"
@@ -36,7 +44,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.ygba.youthgobudget.FrontActivity" />
         </activity>
-        <activity android:name=".FrontActivity" />
+        <activity
+            android:name=".FrontActivity"
+            android:label="@string/title_activity_front"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".EducationRecordActivity"
             android:label="@string/title_activity_education"
