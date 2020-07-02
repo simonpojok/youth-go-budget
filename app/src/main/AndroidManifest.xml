@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EducationRecordActivity"></activity>
+        <activity android:name=".EducationRecordActivity"
+            android:label="@string/title_activity_education"
+            android:parentActivityName=".FrontActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.youthgobudget.FrontActivity" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
