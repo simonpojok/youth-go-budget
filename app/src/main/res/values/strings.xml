@@ -30,4 +30,5 @@
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_budget_consutance">Budget</string>
     <string name="title_activity_local_government">Budget</string>
+    <string name="title_activity_budget_life_cycle">Budge</string>
 </resources>
