@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.youthgobudget.BudgetFormActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_budget_form">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/fab_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="@string/community_budget_performance_and_service_delivery_tracking_tool"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/financial_year"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/financial_year"/> <!--            new data-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quoter"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/quarter"
+                android:id="@+id/quoter"
+                android:minWidth="135dp"/><!--            new data-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/staff_name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/staff_name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:id="@+id/phone_number"/><!--            new data-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_recorded"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_recorded"
+                android:hint="@string/dd_mm_yyyy"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="@string/note_this_tool_is_completed_with_help_of_sub_county_production_agriculture_community_development_officer"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/age_category"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/age_category"
+                android:minWidth="350dp"
+                android:entries="@array/age_category_array"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/gender"
+                android:minWidth="350dp"
+                android:entries="@array/gener_array"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/regions"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/region"
+                android:minWidth="350dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/districts"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/district"
+                android:minWidth="350dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sub_county"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/subcounty"
+                android:minWidth="350dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/parish"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/parish"/>  <!-- new data-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/_1_in_your_region_district_or_sub_county_which_agricultural_service_has_been_the_best"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/agric_service_best"
+                android:visibility="gone"
+                android:minWidth="200dp"
+                android:entries="@array/agric_service_array"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Or specify"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:inputType="text"
+                android:id="@+id/agric_service_spec"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Reason?"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:visibility="gone"
+                android:id="@+id/agric_service_reason"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="2. In your region, district or sub county; which agricultural service has been the worst?"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/agric_service_worst"
+                android:visibility="gone"
+                android:entries="@array/agric_service_array"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Or specify"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:visibility="gone"
+                android:id="@+id/agric_service_worst_spec"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Reason?"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:visibility="gone"
+                android:id="@+id/agric_service_reason_worst"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/_3_what_do_you_see_as_the_single_biggest_problem_facing_agriculture_in_your_sub_county_district_or_region_which_the_government_needs_to_address"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/agric_service_problem"
+                android:entries="@array/agric_service_array"
+                android:visibility="gone"
+                android:minWidth="200dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Or specify"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:visibility="gone"
+                android:id="@+id/agric_service_problem_spec"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/any_other_comments_and_suggestions"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:visibility="gone"
+                android:id="@+id/Agric_service_reason_problem"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/_4_which_of_the_following_agricultural_services_have_you_used_in_the_last_three_months"/>
+
+            <EditText
+                android:id="@+id/agric_service_need"
+                android:minWidth="200dp"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Or specify"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:visibility="gone"
+                android:id="@+id/agric_service_need_spec"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Any other comments and suggestions?"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:visibility="gone"
+                android:id="@+id/agric_service_reason_need"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/_5_what_is_your_proposed_priority"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/Agric_proposed_priority"
+                android:entries="@array/agric_service_array"
+                android:visibility="gone"
+                android:minWidth="200dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Or specify"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:visibility="gone"
+                android:id="@+id/Agric_proposed_priority_spec"/>
+
+
+<!--            NEW DATA -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/does_the_sub_county_division_have_a_substantive_agricultural_extension_worker"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yes_no"
+                android:id="@+id/does_the_sub_county_division_have_a_substantive_agricultural_extension_worker"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/if_no_why"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/if_no_why"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/budget_information_and_transparency"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/grants"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:text="@string/expected_or_approved"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:text="@string/amount_received"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:text="@string/date_received"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="5"
+                            android:text="@string/date_withdrawn"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/extension_services"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/extension_services_expected_or_approved"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/extension_services_amount_received"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:inputType="date"
+                            android:id="@+id/extension_services_date_received"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="5"
+                            android:inputType="date"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:id="@+id/extension_services_date_withdrawn"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/development"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/development_expected_or_approved"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/development_amount_received"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:inputType="date"
+                            android:id="@+id/development_date_received"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="5"
+                            android:inputType="date"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:id="@+id/development_date_withdrawn"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number_of_field_visits_for_farmer_support_conducted_during_the_quarter"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/number_of_field_visits_for_farmer_support_conducted_during_the_quarter"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/advisory_demonstration_community"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yes_no"
+                android:id="@+id/advisory_demonstration_community"
+                android:minWidth="135dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/if_yes_how_many_during_the_quarter"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/if_yes_how_many_during_the_quarter"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mention_the_areas_where_the_meetings_or_workshops_were_held"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/mention_the_areas_where_the_meetings_or_workshops_were_held"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/if_none_what_are_the_reasons_for_not_conducting_the_community_meetings_on_farming"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/if_none_what_are_the_reasons_for_not_conducting_the_community_meetings_on_farming"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_3_0_extension_services"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/are_there_any_advisory_services"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yes_no"
+                android:id="@+id/are_there_any_advisory_services"
+                android:minWidth="135dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/if_yes_how_many_were_done_during_the_quarter"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/if_yes_how_many_were_done_during_the_quarter"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mention_the_areas_where_the_visits_were_made"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mention_the_areas_where_the_visits_were_made"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number_of_farmers_visited_for_advisory_services"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/male"
+                            android:layout_column="1"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/male_number_of_farmers_visited_for_advisory_services"
+                            android:layout_column="2"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/female"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/female_number_of_farmers_visited_for_advisory_services"
+                            android:layout_column="4"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/what_are_the_reasons_for_not_conducting_the_farmer_advisory_services_visits"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/what_are_the_reasons_for_not_conducting_the_farmer_advisory_services_visits"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/distribution_of_inputs_owc"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/have_you_given_any_agriculture_inputs_and_livestock"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yes_no"
+                android:id="@+id/have_you_given_any_agriculture_inputs_and_livestock"
+                android:minWidth="135dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/if_yes_what_types_of_inputs_and_livestock"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/inputs_or_planting_materials"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:text="@string/date"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:text="@string/male_that_received_input"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:text="@string/female_that_received_input"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sub_county_or_village"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/inputs_or_planting_materials_one"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:id="@+id/date_one"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/male_that_received_input_one"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/female_that_received_input_one"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_or_village_one"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/inputs_or_planting_materials_two"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:id="@+id/date_two"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/male_that_received_input_two"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/female_that_received_input_two"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_or_village_two"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/inputs_or_planting_materials_three"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:id="@+id/date_three"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/male_that_received_input_three"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/female_that_received_input_three"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_or_village_three"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/inputs_or_planting_materials_four"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:id="@+id/date_four"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/male_that_received_input_four"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/female_that_received_input_four"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_or_village_four"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/inputs_or_planting_materials_five"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:id="@+id/date_five"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/male_that_received_input_five"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/female_that_received_input_five"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_or_village_five"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/inputs_or_planting_materials_six"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:id="@+id/date_six"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/male_that_received_input_six"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/female_that_received_input_six"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_or_village_six"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/if_non_what_are_the_reasons_for_not_providing_farmers_with_agriculture_inputs_and_livestock_during_the_quarter"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/if_non_what_are_the_reasons_for_not_providing_farmers_with_agriculture_inputs_and_livestock_during_the_quarter"/>
+
+<!-- -&#45;&#45;  - - - - &#45;&#45; - - -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/give_any_other_observations_or_challenges"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/Agric_proposed_priority_reason"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/save_form"
+                android:text="Save"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/colorWhite"
+                android:paddingBottom="@dimen/fab_margin" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,1888 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SocialDevelopmentActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_social_development">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/community_budget_performance_and_service_delivery_tracking_tool"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/financial_year"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/financial_year"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quarter"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/quarter"
+                android:id="@+id/quarter"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dd_mm_yyyy"
+                android:clickable="true"
+                android:id="@+id/date"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/regions"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="350dp"
+                android:id="@+id/region"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/districts"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="350dp"
+                android:id="@+id/district"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sub_county"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="350dp"
+                android:id="@+id/subcounty"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/parish"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parish"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/village"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/village"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_of_monitor"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_of_monitor"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_number"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/budget_receipt_date"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dd_mm_yyyy"
+                android:id="@+id/budget_receipt_date"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/grants"
+                            android:layout_column="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/expected_or_approved"
+                            android:layout_column="2"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/amount_received"
+                            android:layout_column="3"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/date_received"
+                            android:layout_column="4"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/date_withdrawn"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/community_mobilization"
+                            android:layout_column="1"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/community_mobilization_expected_or_approved"
+                            android:inputType="number"
+                            android:layout_column="2"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/community_mobilization_amount_received"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:id="@+id/community_mobilization_date_received"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:inputType="date"
+                            android:id="@+id/community_mobilization_date_withdrawn"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/other_eg_fal_ylp_uwep"
+                            android:layout_column="1"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/fal_ylp_uwep_expected_or_approved"
+                            android:inputType="number"
+                            android:layout_column="2"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/fal_ylp_uwep_amount_received"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:id="@+id/fal_ylp_uwep_date_received"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:inputType="date"
+                            android:id="@+id/fal_ylp_uwep_date_withdrawn"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/are_the_women_empowerment_programs_functional"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/are_the_women_empowerment_programs_functional"
+                android:minWidth="135dp"
+                android:entries="@array/yes_no"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/if_yes_how_many_women_have_been_supported"
+                android:inputType="number"
+                android:id="@+id/if_yes_how_many_women_have_been_supported"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/name_of_the_women_group_village_or_sub_county"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:text="@string/number_of_males"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:text="@string/number_of_females"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:text="@string/amount_received"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_women_group_village_or_sub_county_one"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/number_of_males_one"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/number_of_females_one"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/amount_received_one"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_women_group_village_or_sub_county_two"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/number_of_males_two"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/number_of_females_two"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/amount_received_two"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_women_group_village_or_sub_county_three"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/number_of_males_three"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/number_of_females_three"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/amount_received_three"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_women_group_village_or_sub_county_four"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/number_of_males_four"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/number_of_females_four"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/amount_received_four"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_women_group_village_or_sub_county_five"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/number_of_males_five"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/number_of_females_five"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/amount_received_five"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_women_group_village_or_sub_county_six"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/number_of_males_six"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/number_of_females_six"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/amount_received_six"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_women_group_village_or_sub_county_seven"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/number_of_males_seven"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/number_of_females_seven"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/amount_received_seven"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/is_the_youth_livelihood_program_running"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yes_no"
+                android:id="@+id/is_the_youth_livelihood_program_running"
+                android:minWidth="135dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/if_yes_how_many_youths_have_been_supported"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/if_yes_how_many_youths_have_been_supported"
+                android:inputType="number"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/name_of_the_youth_group"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:text="@string/village_or_sub_county"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/number_of_group_members_males"
+                            android:layout_column="3"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/number_of_female_group_members"
+                            android:layout_column="4"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/amount_received"
+                            android:layout_column="5"/>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_youth_group_one"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:id="@+id/village_or_sub_county_one"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_group_members_males_one"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_female_group_members_one"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/livelihood_amount_received_one"
+                            android:layout_column="5"/>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_youth_group_two"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:id="@+id/village_or_sub_county_two"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_group_members_males_two"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_female_group_members_two"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/livelihood_amount_received_two"
+                            android:layout_column="5"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_youth_group_three"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:id="@+id/village_or_sub_county_three"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_group_members_males_three"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_female_group_members_three"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/livelihood_amount_received_three"
+                            android:layout_column="5"/>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_youth_group_four"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:id="@+id/village_or_sub_county_four"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_group_members_males_four"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_female_group_members_four"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/livelihood_amount_received_four"
+                            android:layout_column="5"/>
+                    </TableRow>
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_youth_group_five"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:id="@+id/village_or_sub_county_five"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_group_members_males_five"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_female_group_members_five"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/livelihood_amount_received_five"
+                            android:layout_column="5"/>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_youth_group_six"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:id="@+id/village_or_sub_county_six"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_group_members_males_six"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_female_group_members_six"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/livelihood_amount_received_six"
+                            android:layout_column="5"/>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_youth_group_seven"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:id="@+id/village_or_sub_county_seven"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_group_members_males_seven"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/number_of_female_group_members_seven"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/livelihood_amount_received_seven"
+                            android:layout_column="5"/>
+                    </TableRow>
+
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/how_many_adult_literacy_training_sessions_have_been_conducted_in_this_quarter"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/male"
+                            android:layout_column="1"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/male_adult_literacy_training_sessions_have_been_conducted_in_this_quarter"
+                            android:layout_column="2"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/female"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/female_adult_literacy_training_sessions_have_been_conducted_in_this_quarter"
+                            android:layout_column="4"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/learners_trained"
+                            android:layout_column="5"/>
+
+                       </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mention_any_other_challenges_or_observations_affecting_social_development_sector"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mention_any_other_challenges_or_observations_affecting_social_development_sector"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="@string/district_budget_information"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/financial_year"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/district_budget_financial_year"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/department"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:text="@string/approved_budget"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:text="@string/percentage_share"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/administration"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/administration_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/administration_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/finance"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/finance_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/finance_percentage_share"/>
+
+                    </TableRow>
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/statutory_bodies"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/statutory_bodies_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/statutory_bodies_percentage_share"/>
+
+                    </TableRow>
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/production_and_marketing"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/production_and_marketing_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/production_and_marketing_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/health"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/health_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/health_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/education"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/education_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/education_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/roads_and_engineering"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/roads_and_engineering_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/roads_and_engineering_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/water"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/water_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/water_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/natural_resources"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/natural_resources_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/natural_resources_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/community_based_services"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/community_based_services_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/community_based_services_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/planning"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/planning_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/planning_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/internal_audit"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/internal_audit_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/internal_audit_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/trade_industry_and_local_development"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/trade_industry_and_local_development_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/trade_industry_and_local_development_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/total"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:textColor="@color/colorAccent"
+                            android:id="@+id/total_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:textColor="@color/colorAccent"
+                            android:id="@+id/total_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/wage"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/wage_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/wage_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/non_wage_recurrent"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/non_wage_recurrent_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/non_wage_recurrent_percentage_share"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/domestic_development"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/domestic_development_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/domestic_development_percentage_share"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:textColor="@color/colorAccent"
+                            android:text="@string/ext_financing"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/ext_financing_approved_budget"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/ext_financing_percentage_share"/>
+
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="@string/community_budget_wish_list"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/district_or_sector"
+                            android:layout_column="1"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sub_county"
+                            android:layout_column="2"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/financial_year"
+                            android:layout_column="3"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/service_centre"
+                            android:layout_column="4"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/community_needs"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/district_or_sector_one"
+                            android:layout_column="1"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_one"
+                            android:layout_column="2"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/financial_year_one"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/service_centre_one"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/community_needs_one"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/district_or_sector_two"
+                            android:layout_column="1"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_two"
+                            android:layout_column="2"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/financial_year_two"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/service_centre_two"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/community_needs_two"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/district_or_sector_three"
+                            android:layout_column="1"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_three"
+                            android:layout_column="2"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/financial_year_three"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/service_centre_three"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/community_needs_three"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/district_or_sector_four"
+                            android:layout_column="1"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_four"
+                            android:layout_column="2"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/financial_year_four"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/service_centre_four"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/community_needs_four"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/district_or_sector_five"
+                            android:layout_column="1"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_five"
+                            android:layout_column="2"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/financial_year_five"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/service_centre_five"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/community_needs_five"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/district_or_sector_six"
+                            android:layout_column="1"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_six"
+                            android:layout_column="2"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/financial_year_six"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/service_centre_six"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/community_needs_six"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/district_or_sector_seven"
+                            android:layout_column="1"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sub_county_seven"
+                            android:layout_column="2"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/financial_year_seven"
+                            android:layout_column="3"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/service_centre_seven"
+                            android:layout_column="4"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/community_needs_seven"
+                            android:layout_column="5"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorAccent"
+                android:padding="@dimen/fab_margin"
+                android:id="@+id/save_development"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

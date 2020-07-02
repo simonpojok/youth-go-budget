@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BudgetMoniteringActivity"
+    tools:showIn="@layout/activity_budget_monitering">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/region"/>
+
+            <Spinner
+                android:id="@+id/region"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="350dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/district"/>
+
+            <Spinner
+                android:id="@+id/district"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="350dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sub_county"/>
+
+            <Spinner
+                android:id="@+id/sub_county"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="350dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sector"/>
+
+            <Spinner
+                android:id="@+id/sector"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="350dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quoter"/>
+
+            <Spinner
+                android:id="@+id/quoter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/quoter"
+                android:minWidth="350dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_sent"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount_sent"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_spent"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount_spent"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_received"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_received"
+                android:inputType="date"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_of_monitoring"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_of_monitoring"
+                android:inputType="date"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/save_budget_monitoring"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".WaterSectorActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_water_sector">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/fab_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/community_budget_performance_and_service_delivery_tracking_tool"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/financial_year"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/financial_year"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quarter"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/quarter"
+                android:id="@+id/quarter"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dd_mm_yyyy"
+                android:clickable="true"
+                android:id="@+id/date"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/regions"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="350dp"
+                android:id="@+id/region"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/districts"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="350dp"
+                android:id="@+id/district"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sub_county"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="350dp"
+                android:id="@+id/subcounty"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/parish"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/parish"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/village"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/village"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_of_monitor"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_of_monitor"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="@string/this_tool_can_be_completed_with_help_of_the_water_sanitation_and_environment_office_department"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/division_have_water_sanitation"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/division_have_water_sanitation"
+                android:minWidth="135dp"
+                android:entries="@array/yes_no"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/if_no_why"
+                android:id="@+id/division_have_water_sanitation_if_no"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/what_are_the_water_sanitationt_protection_activities_taking_place_in_the_sub_county"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/what_are_the_water_sanitationt_protection_activities_taking_place_in_the_sub_county"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/are_there_rural_safe_water_point_sources_constructed"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/are_there_rural_safe_water_point_sources_constructed"
+                android:minWidth="135dp"
+                android:entries="@array/yes_no"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clean_and_safe_water_accessibility"/>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="1"
+                            android:text="@string/area_in_the_sub_county"/>
+
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="2"
+                            android:text="@string/water_source"/>
+
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="3"
+                            android:text="@string/functional"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="4"
+                            android:text="@string/non_functional"/>
+
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="5"
+                            android:text="@string/no_water_source_available"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="1"
+                            android:id="@+id/area_in_the_sub_county_one"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/water_source_one"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/functional_one"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/non_functional_one"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="5"
+                            android:inputType="number"
+                            android:id="@+id/no_water_source_available_one"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="1"
+                            android:id="@+id/area_in_the_sub_county_two"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/water_source_two"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/functional_two"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/non_functional_two"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="5"
+                            android:inputType="number"
+                            android:id="@+id/no_water_source_available_two"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="1"
+                            android:id="@+id/area_in_the_sub_county_three"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/water_source_three"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/functional_three"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/non_functional_three"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="5"
+                            android:inputType="number"
+                            android:id="@+id/no_water_source_available_three"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="1"
+                            android:id="@+id/area_in_the_sub_county_four"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/water_source_four"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/functional_four"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/non_functional_four"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="5"
+                            android:inputType="number"
+                            android:id="@+id/no_water_source_available_four"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="1"
+                            android:id="@+id/area_in_the_sub_county_five"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/water_source_five"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/functional_five"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/non_functional_five"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="5"
+                            android:inputType="number"
+                            android:id="@+id/no_water_source_available_five"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="1"
+                            android:id="@+id/area_in_the_sub_county_six"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="2"
+                            android:inputType="number"
+                            android:id="@+id/water_source_six"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="3"
+                            android:inputType="number"
+                            android:id="@+id/functional_six"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="4"
+                            android:inputType="number"
+                            android:id="@+id/non_functional_six"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_column="5"
+                            android:inputType="number"
+                            android:id="@+id/no_water_source_available_six"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/do_the_rural_water_point_sources_have_user_committees"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/do_the_rural_water_point_sources_have_user_committees"
+                android:entries="@array/yes_no"
+                android:minWidth="135dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/if_yes_do_the_rural_water_point_sources_have_user_committees"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/are_there_any_wetlands_demarcated_or_protected"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/are_there_any_wetlands_demarcated_or_protected"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_area_with_wetland_degradation"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:text="@string/name_of_the_sub_county_village"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@string/wetland_under_destruction"
+                            android:layout_column="2"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_sub_county_village_two"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:id="@+id/wetland_under_destruction_two"
+                            android:layout_column="2"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_sub_county_village_three"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:id="@+id/wetland_under_destruction_three"
+                            android:layout_column="2"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_sub_county_village_four"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:id="@+id/wetland_under_destruction_four"
+                            android:layout_column="2"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_sub_county_village_five"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:id="@+id/wetland_under_destruction_five"
+                            android:layout_column="2"/>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:id="@+id/name_of_the_sub_county_village_six"/>
+
+                        <EditText
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:inputType="number"
+                            android:id="@+id/wetland_under_destruction_six"
+                            android:layout_column="2"/>
+
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/what_are_the_tree_planting_programs_known_in_the_area"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/what_are_the_tree_planting_programs_known_in_the_area"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorAccent"
+                android:id="@+id/save_water_sanitation"
+                android:padding="@dimen/fab_margin"
+                android:text="@string/save"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

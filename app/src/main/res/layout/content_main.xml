@@ -1,19 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.youthgobudget.MainActivity"
+    tools:showIn="@layout/activity_main">
 
-    <fragment
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/nav_graph" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_marginLeft="135dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/yougo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/yuyonet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/title_activity_main"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/voice"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="200dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:text="@string/leaders"
+            android:layout_marginTop="250dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:text="@string/show_records"
+            android:padding="@dimen/fab_margin"
+            android:id="@+id/show_records"
+            android:layout_marginTop="350dp"/>
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

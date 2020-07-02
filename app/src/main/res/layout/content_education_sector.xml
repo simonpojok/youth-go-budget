@@ -1,0 +1,1542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EducationSectorActivity"
+    tools:showIn="@layout/activity_education_sector"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/fab_margin"
+            android:text="@string/education_tool_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/financial_year"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/financial_year"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quarter"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/quarter"
+            android:id="@+id/quarter"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dd_mm_yyyy"
+            android:clickable="true"
+            android:id="@+id/date"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/regions"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="350dp"
+            android:id="@+id/region"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/districts"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="350dp"
+            android:id="@+id/district"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sub_county"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="350dp"
+            android:id="@+id/subcounty"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/parish"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/parish"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/village"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/village"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_of_monitor"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_of_monitor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="@string/note"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_of_universal_primary_education_upe_school"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_of_universal_primary_education_upe_school"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/school_details"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/category"/>
+
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:text="@string/male"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="3"
+                        android:text="@string/female"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="4"
+                        android:text="@string/male_pwds"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="5"
+                        android:text="@string/female_pwds"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/teachers"/>
+
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/teachers_male"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/teachers_female"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/teachers_male_pwds"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="5"
+                        android:inputType="number"
+                        android:id="@+id/teachers_female_pwds"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/pupil_enrollment"/>
+
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/pupil_enrollment_male"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/pupil_enrollment_female"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/pupil_enrollment_male_pwds"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="5"
+                        android:inputType="number"
+                        android:id="@+id/pupil_enrollment_female_pwds"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/number_of_p7_pupils"/>
+
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/number_of_p7_pupils_male"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/number_of_p7_pupils_female"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/number_of_p7_pupils_male_pwds"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="5"
+                        android:inputType="number"
+                        android:id="@+id/number_of_p7_pupils_female_pwds"/>
+
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/no_of_pupils_dropping_out_of_school"/>
+
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/no_of_pupils_dropping_out_of_school_male"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/no_of_pupils_dropping_out_of_school_female"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/no_of_pupils_dropping_out_of_school_male_pwds"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_column="5"
+                        android:inputType="number"
+                        android:id="@+id/no_of_pupils_dropping_out_of_school_pwds"/>
+
+                </TableRow>
+            </TableLayout>
+
+
+        </HorizontalScrollView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/at_the_time_of_monitoring"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/why_children_are_dropping_out_of_school"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/why_children_are_dropping_out_of_school"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/budget_information"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/budgeted_funds_receipts_and_release_dates"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/grants"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:text="@string/approved_budgets"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:text="@string/budget_released"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="4"
+                        android:text="@string/date_received"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="5"
+                        android:text="@string/date_withdrawn"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/capitation_grant"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/capitation_grant_approved_budgets"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/capitation_grant_budget_released"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="4"
+                        android:hint="@string/dd_mm_yyyy"
+                        android:id="@+id/capitation_grant_date_received"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="5"
+                        android:hint="@string/dd_mm_yyyy"
+                        android:id="@+id/capitation_grant_date_withdrawn"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/school_facilitation_grant_sfg"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/school_facilitation_grant_sfg_approved_budgets"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/school_facilitation_grant_sfg_budget_released"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="4"
+                        android:hint="@string/dd_mm_yyyy"
+                        android:id="@+id/school_facilitation_grant_sfg_date_received"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="5"
+                        android:hint="@string/dd_mm_yyyy"
+                        android:id="@+id/school_facilitation_grant_sfg_date_withdrawn"/>
+
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/school_display_budget"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="350dp"
+            android:entries="@array/school_display_budget"
+            android:id="@+id/does_school_display_budget"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/state_the_period_to_which_the_budget_information_relates"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/state_the_period_to_which_the_budget_information_relates"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/termly_performance"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/grade"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:text="@string/male"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:text="@string/female"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/grade_1"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/grade_1male"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/grade_1female"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/grade_2"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/grade_2male"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/grade_2female"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/grade_3"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/grade_3male"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/grade_3female"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/last_grade"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/last_grade_male"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/last_grade_female"/>
+
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/current_terms_performance"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/current_terms_performance"
+            android:id="@+id/current_terms_performance"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_attributable"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reason_attributable"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sanitation_in_the_school"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/facility"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:text="@string/no_of_blocks"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:text="@string/no_of_stances"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="4"
+                        android:text="@string/male_stances_pupils"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="5"
+                        android:text="@string/female_stances_pupils"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="6"
+                        android:text="@string/male_stances_teachers"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="7"
+                        android:text="@string/female_stances_teachers"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="8"
+                        android:text="@string/mixed_teachers"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="9"
+                        android:text="@string/functional"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="10"
+                        android:text="@string/none_functional"/>
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/toilet"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/toilet_no_of_blocks"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/toilet_no_of_stances"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/toilet_male_stances_pupils"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="5"
+                        android:inputType="number"
+                        android:id="@+id/toilet_female_stances_pupils"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="6"
+                        android:inputType="number"
+                        android:id="@+id/toilet_male_stances_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="7"
+                        android:inputType="number"
+                        android:id="@+id/toilet_female_stances_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="8"
+                        android:inputType="number"
+                        android:id="@+id/toilet_mixed_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="9"
+                        android:inputType="number"
+                        android:id="@+id/toilet_functional"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="10"
+                        android:inputType="number"
+                        android:id="@+id/toilet_none_functional"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/latrine"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/latrine_no_of_blocks"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/latrine_no_of_stances"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/latrine_male_stances_pupils"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="5"
+                        android:inputType="number"
+                        android:id="@+id/latrine_female_stances_pupils"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="6"
+                        android:inputType="number"
+                        android:id="@+id/latrine_male_stances_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="7"
+                        android:inputType="number"
+                        android:id="@+id/latrine_female_stances_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="8"
+                        android:inputType="number"
+                        android:id="@+id/latrine_mixed_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="9"
+                        android:inputType="number"
+                        android:id="@+id/latrine_functional"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="10"
+                        android:inputType="number"
+                        android:id="@+id/latrine_none_functional"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/vip_latrine"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/vip_latrine_no_of_blocks"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/vip_latrine_no_of_stances"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/vip_latrine_male_stances_pupils"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="5"
+                        android:inputType="number"
+                        android:id="@+id/vip_latrine_female_stances_pupils"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="6"
+                        android:inputType="number"
+                        android:id="@+id/vip_latrine_male_stances_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="7"
+                        android:inputType="number"
+                        android:id="@+id/vip_latrine_female_stances_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="8"
+                        android:inputType="number"
+                        android:id="@+id/vip_latrine_mixed_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="9"
+                        android:inputType="number"
+                        android:id="@+id/vip_latrine_functional"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="10"
+                        android:inputType="number"
+                        android:id="@+id/vip_latrine_none_functional"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/female_changing_rooms"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/female_changing_rooms_no_of_blocks"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/female_changing_rooms_no_of_stances"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:enabled="false"
+                        android:id="@+id/female_changing_rooms_male_stances_pupils"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="5"
+                        android:inputType="number"
+                        android:id="@+id/female_changing_rooms_female_stances_pupils"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="6"
+                        android:inputType="number"
+                        android:enabled="false"
+                        android:id="@+id/female_changing_rooms_male_stances_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="7"
+                        android:inputType="number"
+                        android:id="@+id/female_changing_rooms_female_stances_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="8"
+                        android:inputType="number"
+                        android:id="@+id/female_changing_rooms_mixed_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="9"
+                        android:inputType="number"
+                        android:id="@+id/female_changing_rooms_functional"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="10"
+                        android:inputType="number"
+                        android:id="@+id/female_changing_rooms_none_functional"/>
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="1"
+                        android:text="@string/boys_urinals"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/boys_urinals_no_of_blocks"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="3"
+                        android:inputType="number"
+                        android:id="@+id/boys_urinals_no_of_stances"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="4"
+                        android:inputType="number"
+                        android:id="@+id/boys_urinals_male_stances_pupils"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="5"
+                        android:inputType="number"
+                        android:enabled="false"
+                        android:id="@+id/boys_urinals_female_stances_pupils"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="6"
+                        android:inputType="number"
+                        android:id="@+id/boys_urinals_male_stances_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="7"
+                        android:inputType="number"
+                        android:enabled="false"
+                        android:id="@+id/boys_urinals_stances_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="8"
+                        android:inputType="number"
+                        android:id="@+id/boys_urinals_mixed_teachers"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="9"
+                        android:inputType="number"
+                        android:id="@+id/boys_urinals_rooms_functional"/>
+
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_column="10"
+                        android:inputType="number"
+                        android:id="@+id/boys_urinals_none_functional"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/are_latrines_accessible_to_pupils"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/yes_no"
+            android:minWidth="350dp"
+            android:id="@+id/are_latrines_accessible_to_pupils"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_accessible_are_the_facilities_accessible_to_pupils_with_pupils_with_disabilities"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/how_accessible_are_the_facilities_accessible_to_pupils_with_pupils_with_disabilities"
+            android:id="@+id/how_accessible_are_the_facilities_accessible_to_pupils_with_pupils_with_disabilities"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/specify_how_accessible_are_the_facilities_accessible_to_pupils_with_pupils_with_disabilities"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/functional_water_point_within_or_nearby_the_school"/>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/yes_no"
+            android:minWidth="350dp"
+            android:id="@+id/functional_water_point_within_or_nearby_the_school"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/estimate_distance"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/estimate_distance"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/other_school_infrustructure"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/permanent_class_room_blocks"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/permanent_class_room_blocks"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_many_desks_are_in_school"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/how_many_desks_are_in_school"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pupil_desk_ratio"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pupil_desk_ratio"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/staffing_of_the_school"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_teachers_enrolled"/>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/male" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/number_of_teachers_enrolled_male" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/female" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/number_of_teachers_enrolled_female" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_teacher_present"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/male" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/number_of_teacher_present_male" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:text="@string/female" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:inputType="number"
+                        android:id="@+id/number_of_teacher_present_female" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_teacher_on_payroll"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/number_of_teacher_on_payroll"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="@string/please_validate_information_with_human_resource_staff_register_or_personnel_files_resident_at_the_school"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/what_is_the_teacher_pupil_ratio"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/teacher_pupil_ratio"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/senior_woman_teacher"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/yes_no"
+            android:minWidth="350dp"
+            android:id="@+id/senior_woman_teacher"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/senior_woman_teacher_offer_support_to_girls_regard_to_counselling"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/senior_woman_teacher_offer_support_to_girls_regard_to_counselling"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oversight_and_school_monitoring"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/school_Inspector_and_or_health_Inspector_visit_school"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/school_Inspector_and_or_health_Inspector_visit_school"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/When_was_the_last_time_the_School_Inspector_and_or_Health_Inspector_visited_the_school"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dd_mm_yyyy"
+            android:id="@+id/When_was_the_last_time_the_School_Inspector_and_or_Health_Inspector_visited_the_school"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/does_the_school_have_a_management_committee"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/does_the_school_have_a_management_committee"
+            android:minWidth="350dp"
+            android:entries="@array/yes_no"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/if_yes_how_often_do_they_meet"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/if_yes_how_often_do_they_meet"
+            android:minWidth="350dp"
+            android:entries="@array/if_yes_how_often_do_they_meet"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/or_specify"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/or_specify"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/is_the_school_management_committee_trained"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="350dp"
+            android:entries="@array/is_the_school_management_committee_trained"
+            android:id="@+id/is_the_school_management_committee_trained"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/list_any_other_observations_or_challenges"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_any_other_observations_or_challenges"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/save_seducation_sector"
+            android:text="@string/save_seducation_sector"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:padding="@dimen/fab_margin"
+            android:paddingBottom="@dimen/fab_margin"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

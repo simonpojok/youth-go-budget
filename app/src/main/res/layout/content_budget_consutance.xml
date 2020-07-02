@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BudgetConsutanceActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_budget_consutance">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <!--======================= Agriculture =============================-->
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp">
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/agric"
+                        android:text="@string/agriculture"
+                        android:textSize="25sp"
+                        android:layout_margin="16dp" />
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/agric_form"
+                        android:textSize="25sp"
+                        android:text="Form"
+                        android:layout_margin="16dp"/>
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/agric_records"
+                        android:text="Records"
+                        android:textSize="25sp"
+                        android:layout_margin="16dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!--====================== Health ==============================-->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            card_view:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/health"
+                android:text="HEALTH"
+                android:textSize="25sp"
+                android:layout_margin="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Form"
+                android:textSize="25sp"
+                android:id="@+id/health_form"
+                android:layout_margin="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Records"
+                android:textSize="25sp"
+                android:id="@+id/health_records"
+                android:layout_margin="16dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+            <!--====================== Education ===============================-->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="16dp"
+            card_view:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/education"
+                android:text="EDUCATION"
+                android:textSize="25sp"
+                android:layout_margin="16dp"/>
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/education_form"
+                android:layout_margin="16dp"
+                android:textSize="25sp"
+                android:text="Form"/>
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Record"
+                android:textSize="25sp"
+                android:id="@+id/education_records" />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+            <!--====================== Water and Sanitation ===============================-->
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp">
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/water_and_sanitation"
+                        android:text="@string/water"
+                        android:textSize="25sp"
+                        android:layout_margin="16dp"/>
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/water_and_sanitation_form"
+                        android:layout_margin="16dp"
+                        android:textSize="25sp"
+                        android:text="Form"/>
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="Record"
+                        android:textSize="25sp"
+                        android:id="@+id/water_and_sanitation_records" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--   ================= Social Developmemnt ==============-->
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="16dp">
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/social_development"
+                        android:text="@string/development"
+                        android:textSize="25sp"
+                        android:layout_margin="16dp"/>
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/social_development_form"
+                        android:layout_margin="16dp"
+                        android:textSize="25sp"
+                        android:text="Form"/>
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:text="Record"
+                        android:textSize="25sp"
+                        android:id="@+id/social_development_records" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

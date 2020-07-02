@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.youthgobudget.EducationActivity"
+    tools:showIn="@layout/activity_education">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/age_category" />
+
+        <Spinner
+            android:id="@+id/age_category"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:entries="@array/age_category_array"
+            android:minWidth="350dp"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/gender" />
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:entries="@array/gener_array"
+            android:minWidth="350dp"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:text="@string/regions" />
+
+        <Spinner
+            android:id="@+id/region"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="250dp"
+            android:minWidth="350dp"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:text="@string/districts" />
+
+        <Spinner
+            android:id="@+id/district"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="350dp"
+            android:minWidth="350dp"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:text="@string/sub_county" />
+
+        <Spinner
+            android:id="@+id/subcounty"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="450dp"
+            android:minWidth="350dp"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:text="@string/level_of_education" />
+
+        <Spinner
+            android:id="@+id/level_of_education"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="550dp"
+            android:entries="@array/level_of_education_array"
+            android:minWidth="350dp"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="600dp"
+            android:text="@string/_7_in_your_sub_county_are_there_schools_which_provide_use_or_upe_education" />
+
+        <Spinner
+            android:id="@+id/use_education"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="650dp"
+            android:entries="@array/boolean_array"
+            android:minWidth="350dp"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="700dp"
+            android:text="@string/_8_in_your_sub_county_which_services_have_been_the_best_in_the_use_and_upe_schools" />
+
+        <EditText
+            android:id="@+id/best_use_education_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="750dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="800dp"
+            android:text="Or Specify" />
+
+        <EditText
+            android:id="@+id/best_use_education_spec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="850dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="900dp"
+            android:text="@string/reason" />
+
+        <EditText
+            android:id="@+id/best_use_education_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="950dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1000dp"
+            android:text="@string/_9_in_your_sub_county_which_services_have_been_the_worst_in_the_use_and_upe_schools" />
+
+        <EditText
+            android:id="@+id/worst_use_education_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1050dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1100dp"
+            android:text="Or Specify" />
+
+        <EditText
+            android:id="@+id/worst_use_education_spec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1150dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1200dp"
+            android:text="@string/reason" />
+
+        <EditText
+            android:id="@+id/worst_use_education_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1250dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1300dp"
+            android:text="Which USE and UPE budget support needs to be prioritized for more budget allocation in financial year 2019/2020?" />
+
+        <Spinner
+            android:id="@+id/priority_use_education_service"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1350dp"
+            android:entries="@array/education_service_array"
+            android:minWidth="350dp"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1400dp"
+            android:text="Or Specify" />
+
+        <EditText
+            android:id="@+id/priority_use_education_spec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1450dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1500dp"
+            android:text="@string/reason" />
+
+        <EditText
+            android:id="@+id/priority_use_education_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1550dp" />
+
+        <Button
+            android:id="@+id/save_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            android:text="Save"
+            android:layout_marginTop="1600dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1650dp"
+            android:text="__________________________" />
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

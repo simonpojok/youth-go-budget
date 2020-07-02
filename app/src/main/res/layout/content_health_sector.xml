@@ -1,0 +1,1946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HealthSectorActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_health_sector">
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="@dimen/fab_margin"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:text="@string/community_budget_performance_and_service_delivery_tracking_tool"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/financial_year"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/financial_year"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/quarter"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:entries="@array/quarter"
+               android:id="@+id/quarter"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/date"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/dd_mm_yyyy"
+               android:clickable="true"
+               android:id="@+id/date"
+               android:focusable="true" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/regions"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="350dp"
+               android:id="@+id/region"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/districts"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="350dp"
+               android:id="@+id/district"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/sub_county"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="350dp"
+               android:id="@+id/subcounty"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/parish"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/parish"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/village"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/village"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/name_of_monitor"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/name_of_monitor"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/phone_number"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/phone_number"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorAccent"
+               android:text="@string/note_this_tool_is_completed_with_help_of_health_officer_in_charge"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/name_and_grade_of_health_center"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/name_and_grade_of_health_center"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/number_of_outpatient_opd_attendance_during_the_quarter"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:id="@+id/number_of_outpatient_opd_attendance_during_the_quarter"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/number_of_inpatient_attendances_during_the_quarter"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:id="@+id/number_of_inpatient_attendances_during_the_quarter"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/budget_information_and_transparency"/>
+
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TableLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/grants"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:text="@string/approved_budgets"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:text="@string/budget_released"/>
+
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="4"
+                           android:text="@string/date_received"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="6"
+                           android:text="@string/date_withdrawn"/>
+
+
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/recurrent"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:inputType="number"
+                           android:id="@+id/recurrent_approved_budgets"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:inputType="number"
+                           android:id="@+id/recurrent_budget_released"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="4"
+                           android:hint="@string/dd_mm_yyyy"
+                           android:id="@+id/recurrent_date_received"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="6"
+                           android:hint="@string/dd_mm_yyyy"
+                           android:id="@+id/recurrent_date_withdrawn"/>
+
+                   </TableRow>
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/development"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:inputType="number"
+                           android:id="@+id/development_approved_budgets"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:inputType="number"
+                           android:id="@+id/development_budget_released"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="4"
+                           android:hint="@string/dd_mm_yyyy"
+                           android:id="@+id/development_date_received"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="6"
+                           android:hint="@string/dd_mm_yyyy"
+                           android:id="@+id/development_date_withdrawn"/>
+
+                   </TableRow>
+
+               </TableLayout>
+           </HorizontalScrollView>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/health_facility_display_budget_information"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/health_facility_display_budget_information"
+               android:entries="@array/health_facility_display_budget_information"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/period_to_which_the_budget_information"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/availability_of_maternity_services_staff_and_facilities"/>
+
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TableLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/category"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:text="@string/yes"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:text="@string/no"/>
+                   </TableRow>
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/maternity_ward"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/maternity_ward_yes"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:id="@+id/maternity_ward_no"/>
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/general_ward"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/general_ward_yes"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:id="@+id/general_ward_no"/>
+                   </TableRow>
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/delivery_beds"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/delivery_beds_yes"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:id="@+id/delivery_beds_no"/>
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/family_planning_services"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/family_planning_services_yes"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:id="@+id/family_planning_services_no"/>
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/hiv_counselling_testing_and_treatment"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/hiv_counselling_testing_and_treatment_yes"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:id="@+id/hiv_counselling_testing_and_treatment_no"/>
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/pmtct"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/pmtct_yes"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:id="@+id/pmtct_no"/>
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/immunization"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/immunization_yes"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:id="@+id/immunization_no"/>
+                   </TableRow>
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/youth_friendly_corners"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/youth_friendly_corners_yes"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:id="@+id/youth_friendly_corners_no"/>
+                   </TableRow>
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/vaccination_for_hep_b"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/vaccination_for_hep_b_yes"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:id="@+id/vaccination_for_hep_b_no"/>
+                   </TableRow>
+
+               </TableLayout>
+
+           </HorizontalScrollView>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/how_many_deliveries_occurred_in_previous_quarter"/>
+
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TableLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/category"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:text="@string/no_of_deliveries"/>
+
+                   </TableRow>
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/live"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:inputType="number"
+                           android:id="@+id/live_no_of_deliveries"/>
+
+                   </TableRow>
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/still"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:inputType="number"
+                           android:id="@+id/still_no_of_deliveries"/>
+
+                   </TableRow>
+
+               </TableLayout>
+
+           </HorizontalScrollView>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/children_immunized_with_the_pentavalent_vaccine"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:id="@+id/children_immunized_with_the_pentavalent_vaccine"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/adolescent_srh_services_at_heath_facility"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/facility_open_during_hours_that_are_convenient_for_adolescents"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/facility_open_during_hours_that_are_convenient_for_adolescents"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/are_srh_services_offered_for_free"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/are_srh_services_offered_for_free"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/adolescents_privacy"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/adolescents_privacy"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/counseling_and_treatment_rooms_allow_for_privacy"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/counseling_and_treatment_rooms_allow_for_privacy"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/code_of_conduct_in_place"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/code_of_conduct_in_place"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/transparent_confidential_mechanism_for_adolescents_to_submit_complaints"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/transparent_confidential_mechanism_for_adolescents_to_submit_complaints"/>
+
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/have_providers_been_trained_to_provide_adolescent_friendly_services"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/have_providers_been_trained_to_provide_adolescent_friendly_services"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/have_all_staff_been_oriented_to_providing_confidential_adolescent_friendly_services"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/have_all_staff_been_oriented_to_providing_confidential_adolescent_friendly_services"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/staff_demonstrate_respect_when_interacting_with_adolescents"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/staff_demonstrate_respect_when_interacting_with_adolescents"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/providers_ensure_the_clients_privacy_and_confidentiality"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/providers_ensure_the_clients_privacy_and_confidentiality"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/providers_set_aside_sufficient_time_for_client_provider_interaction"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/providers_set_aside_sufficient_time_for_client_provider_interaction"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/peer_educators_or_peer_counselors_available"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/peer_educators_or_peer_counselors_available"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/health_providers_assessed_using_quality_standard_checklists"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/health_providers_assessed_using_quality_standard_checklists"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/adolescents_female_and_male_play_a_role_in_the_operation_of_the_health_facility"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/adolescents_female_and_male_play_a_role_in_the_operation_of_the_health_facility"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/adolescents_involved_in_monitoring_the_quality_of_srh_service_provision"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/adolescents_involved_in_monitoring_the_quality_of_srh_service_provision"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/can_adolescents_be_seen_in_the_facility_without_the_consent_of_their_parents_or_spouses"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/can_adolescents_be_seen_in_the_facility_without_the_consent_of_their_parents_or_spouses"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/wide_range_of_srh_services_available"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/wide_range_of_srh_services_available"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/written_guidelines_for_providing_adolescent_services"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/written_guidelines_for_providing_adolescent_services"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/condoms_available_to_both_young_men_and_young_women"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/condoms_available_to_both_young_men_and_young_women"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/educational_materials"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/educational_materials"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/are_referral_mechanisms_in_place_for_medical_emergencies"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:entries="@array/yes_no"
+               android:id="@+id/are_referral_mechanisms_in_place_for_medical_emergencies"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/sanitation_at_the_health_facility"/>
+
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TableLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="1"
+                           android:text="@string/sanitation_facility"/>
+
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="2"
+                           android:text="@string/number_of_blocks"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="3"
+                           android:text="@string/number_of_stances"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="4"
+                           android:text="@string/male_patient_stances"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="5"
+                           android:text="@string/female_patient_stances"/>
+
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="6"
+                           android:text="@string/health_facility_male_staff"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="7"
+                           android:text="@string/health_facility_female_staff"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="8"
+                           android:text="@string/health_facility_mixed_staff"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="9"
+                           android:text="@string/functional"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="10"
+                           android:text="@string/not_functional"/>
+
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="1"
+                           android:text="@string/toilet"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="2"
+                           android:inputType="number"
+                           android:id="@+id/toilet_number_of_blocks"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="3"
+                           android:inputType="number"
+                           android:id="@+id/toilet_number_of_stances"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="4"
+                           android:inputType="number"
+                           android:id="@+id/toilet_male_patient_stances"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="5"
+                           android:inputType="number"
+                           android:id="@+id/toilet_female_patient_stances"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="6"
+                           android:inputType="number"
+                           android:id="@+id/toilet_health_facility_male_staff"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="7"
+                           android:inputType="number"
+                           android:id="@+id/toilet_health_facility_female_staff"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="8"
+                           android:inputType="number"
+                           android:id="@+id/toilet_health_facility_mixed_staff"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="9"
+                           android:inputType="number"
+                           android:id="@+id/toilet_functional"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="10"
+                           android:inputType="number"
+                           android:id="@+id/toilet_not_functional"/>
+
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="1"
+                           android:text="@string/latrine"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="2"
+                           android:inputType="number"
+                           android:id="@+id/latrine_number_of_blocks"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="3"
+                           android:inputType="number"
+                           android:id="@+id/latrine_number_of_stances"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="4"
+                           android:inputType="number"
+                           android:id="@+id/latrine_male_patient_stances"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="5"
+                           android:inputType="number"
+                           android:id="@+id/latrine_female_patient_stances"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="6"
+                           android:inputType="number"
+                           android:id="@+id/latrine_health_facility_male_staff"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="7"
+                           android:inputType="number"
+                           android:id="@+id/latrine_health_facility_female_staff"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="8"
+                           android:inputType="number"
+                           android:id="@+id/latrine_health_facility_mixed_staff"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="9"
+                           android:inputType="number"
+                           android:id="@+id/latrine_functional"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="10"
+                           android:inputType="number"
+                           android:id="@+id/latrine_not_functional"/>
+
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="1"
+                           android:text="@string/female_change_rooms"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="2"
+                           android:inputType="number"
+                           android:id="@+id/female_change_rooms_number_of_blocks"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="3"
+                           android:inputType="number"
+                           android:id="@+id/female_change_rooms_number_of_stances"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="4"
+                           android:inputType="number"
+                           android:enabled="false"
+                           android:id="@+id/female_change_rooms_male_patient_stances"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="5"
+                           android:inputType="number"
+                           android:id="@+id/female_change_rooms_patient_stances"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="6"
+                           android:inputType="number"
+                           android:enabled="false"
+                           android:id="@+id/female_change_rooms_health_facility_staff"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="7"
+                           android:inputType="number"
+                           android:id="@+id/female_change_rooms_health_facility_female_staff"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="8"
+                           android:inputType="number"
+                           android:id="@+id/female_change_rooms_health_facility_mixed_staff"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="9"
+                           android:inputType="number"
+                           android:id="@+id/female_change_rooms_functional"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="10"
+                           android:inputType="number"
+                           android:id="@+id/female_change_rooms_not_functional"/>
+
+                   </TableRow>
+
+               </TableLayout>
+           </HorizontalScrollView>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="@string/health_facility_toilet_latrine_accessible_to_patients_with_disabilities"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:entries="@array/yes_no"
+               android:minWidth="135dp"
+               android:id="@+id/health_facility_toilet_latrine_accessible_to_patients_with_disabilities"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/pwd_friendly_facilities_does_the_health_center"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/pwd_friendly_facilities_does_the_health_center"
+               android:entries="@array/pwd"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/or_specify"
+               android:id="@+id/pwd_friendly_facilities_does_the_health_center_specify"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/water_at_the_health_facility"/>
+
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TableLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/water_point"/>
+
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:text="@string/number"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:text="@string/functional"/>
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="4"
+                           android:text="@string/non_functional"/>
+
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/borehole"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:inputType="number"
+                           android:id="@+id/number_borehole"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="3"
+                           android:inputType="number"
+                           android:id="@+id/borehole_functional"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="4"
+                           android:inputType="number"
+                           android:id="@+id/borehole_non_functional"/>
+
+                   </TableRow>
+
+
+                   <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_column="1"
+                       android:text="@string/tap"/>
+
+
+                   <EditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_column="2"
+                       android:inputType="number"
+                       android:id="@+id/tap_borehole"/>
+
+                   <EditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_column="3"
+                       android:inputType="number"
+                       android:id="@+id/tap_functional"/>
+
+                   <EditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_column="4"
+                       android:inputType="number"
+                       android:id="@+id/tap_non_functional"/>
+
+               </TableRow>
+
+
+               <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_column="1"
+                       android:text="@string/water_tank"/>
+
+
+                   <EditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_column="2"
+                       android:inputType="number"
+                       android:id="@+id/water_tank_borehole"/>
+
+                   <EditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_column="3"
+                       android:inputType="number"
+                       android:id="@+id/water_tank_functional"/>
+
+                   <EditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_column="4"
+                       android:inputType="number"
+                       android:id="@+id/water_tank_non_functional"/>
+
+               </TableRow>
+
+            </TableLayout>
+
+           </HorizontalScrollView>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/water_point_accessible_to_pwds"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:entries="@array/yes_no"
+               android:minWidth="135dp"
+               android:id="@+id/water_point_accessible_to_pwds"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/facility_have_a_functional_water_within_nearby"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:entries="@array/yes_no"
+               android:minWidth="135dp"
+               android:id="@+id/facility_have_a_functional_water_within_nearby"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/estimated_distance"
+               android:id="@+id/facility_have_a_functional_water_within_nearby_estimate"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/handwashing_facility_installed_at_the_health_facility"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:entries="@array/yes_no"
+               android:minWidth="135dp"
+               android:id="@+id/handwashing_facility_installed_at_the_health_facility"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/oversight_role_hc_management_committee"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/health_unit_management_committee_exist"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:entries="@array/yes_no"
+               android:minWidth="135dp"
+               android:id="@+id/health_unit_management_committee_exist"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/if_yes_how_often_do_they_meet"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:entries="@array/if_yes_how_often_do_they_meet"
+               android:minWidth="135dp"
+               android:id="@+id/if_yes_how_often_do_they_meet"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/last_visit_of_suport_supervisor"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/last_visit_of_suport_supervisor"
+               android:hint="@string/dd_mm_yyyy"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/staffing"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/staffing_of_health_center"/>
+
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TableLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TableRow
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_column="1"
+                       android:text="@string/staff"/>
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_column="2"
+                       android:text="@string/staffing_ceiling"/>
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_column="3"
+                       android:text="@string/total_no_of_staff"/>
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_column="4"
+                       android:text="@string/no_of_staff_present"/>
+
+               </TableRow>
+
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="1"
+                           android:text="@string/medical_staff"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="2"
+                           android:inputType="number"
+                           android:id="@+id/medical_staff_ceiling"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="3"
+                           android:inputType="number"
+                           android:id="@+id/total_no_of_medical_staff"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="4"
+                           android:inputType="number"
+                           android:id="@+id/no_of_medical_staff_present"/>
+
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="1"
+                           android:text="@string/non_medical"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="2"
+                           android:inputType="number"
+                           android:id="@+id/non_medical_staff_ceiling"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="3"
+                           android:inputType="number"
+                           android:id="@+id/total_no_of_non_medical_staff"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_column="4"
+                           android:inputType="number"
+                           android:id="@+id/no_of_non_medical_staff_present"/>
+
+                   </TableRow>
+
+               </TableLayout>
+
+           </HorizontalScrollView>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/please_validate_information_with_human_resource_staff_register_or_personnel_files_resident_at_the_hc"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/reasons_for_the_absent_staff"/>
+
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/reasons_for_the_absent_staff"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/last_date_of_medical_staff_performance_appraisal"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/dd_mm_yyyy"
+               android:id="@+id/last_date_of_medical_staff_performance_appraisal"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/number_of_staff_appraised"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/number_of_staff_appraised"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/medical_supplies"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/did_the_hc_receive_a_medical_supplies_consignment_from_national_medical_stores_in_this_quarter"/>
+
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:minWidth="135dp"
+               android:id="@+id/did_the_hc_receive_a_medical_supplies_consignment_from_national_medical_stores_in_this_quarter"
+               android:entries="@array/yes_no"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/if_yes_please_provide_date_as_per_delivery_note"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/dd_mm_yyyy"
+               android:id="@+id/if_yes_please_provide_date_as_per_delivery_note"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/list_the_essential_drugs_that_are_out_of_stock"/>
+
+
+           <HorizontalScrollView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TableLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/name_of_the_essential_drug_out_of_stock"/>
+
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:text="@string/stock_required"/>
+
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="@string/_1"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/one_stock_required"/>
+
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="2"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/two_stock_required"/>
+
+                   </TableRow>
+
+
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="3"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/three_stock_required"/>
+
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="4"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/four_stock_required"/>
+
+                   </TableRow>
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="5"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/five_stock_required"/>
+
+                   </TableRow>
+
+
+                   <TableRow
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent">
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="1"
+                           android:text="6"/>
+
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_column="2"
+                           android:id="@+id/six_stock_required"/>
+
+                   </TableRow>
+
+
+
+               </TableLayout>
+
+           </HorizontalScrollView>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/when_did_the_health_center_last_drugs_consignment_get_finished"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/dd_mm_yyyy"
+               android:id="@+id/when_did_the_health_center_last_drugs_consignment_get_finished"/>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/number_of_medical_equipment_bought"/>
+
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/number_of_medical_equipment_bought"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/does_have_an_ambulance"/>
+
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/does_have_an_ambulance"
+               android:entries="@array/yes_no"
+               android:minWidth="135dp"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/if_no_how_are_referrals_handled"/>
+
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/if_no_how_are_referrals_handled"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/list_any_other_observations_or_challenges_hc"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/list_any_other_observations_or_challenges_hc"/>
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/save_health_sector"
+               android:padding="@dimen/fab_margin"
+               android:textColor="@color/colorWhite"
+               android:background="@color/colorAccent"
+               android:text="@string/save"/>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</LinearLayout>

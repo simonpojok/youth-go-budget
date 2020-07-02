@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/budget_consultation"
+        android:icon="@drawable/ic_consult"
+        android:title="@string/title_activity_budget_consutance" />
+
+    <item
+        android:id="@+id/local_government_structure"
+        android:icon="@drawable/ic_wc"
+        android:title="@string/local_government_structure" />
+
+    <item
+        android:id="@+id/life_cycle"
+        android:icon="@drawable/ic_cycle"
+        android:title="@string/budget_life_cycle" />
+
+
+    <item
+        android:id="@+id/budget_monitering"
+        android:icon="@drawable/ic_allocation"
+        android:title="@string/budget_monitoring" />
+
+    <item
+        android:id="@+id/polls"
+        android:icon="@drawable/ic_news"
+        android:title="@string/polls" />
+
+
+    <item android:title="@string/data">
+        <menu>
+            <item
+                android:id="@+id/location"
+                android:icon="@android:drawable/ic_menu_save"
+                android:title="@string/synchronise" />
+
+        </menu>
+    </item>
+
+
+
+</menu>

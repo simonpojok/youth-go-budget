@@ -1,39 +1,560 @@
 <resources>
-    <string name="app_name">YouthGoBudget</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="app_name">Youth go budget</string>
+    <string name="title_activity_main">YOUTH GO BUDGET</string>
+    <string name="title_activity_budget_form">Budget Form</string>
+    <string name="voice">Have a voice in local and central government budget</string>
+    <string name="leaders">Show your leaders your budget needs and priorities in Agriculture, Education and Health</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_education">some dummy</string>
-    <string name="title_activity_medical_record">Medical record</string>
-    <string name="title_activity_medical_form">Medical form</string>
-    <string name="title_activity_front">Fromt activity</string>
-    <string name="title_activity_agric_list"><![CDATA["        <activity             android:name=\".AgricListActivity\"             android:label=\"@string/title_activity_agric_list\"             android:parentActivityName=\".FrontActivity\"             android:theme=\"@style/AppTheme.NoActionBar\">             <meta-data                 android:name=\"android.support.PARENT_ACTIVITY\"                 android:value=\"com.youthgobudget.FrontActivity\" />         </activity>"]]></string>
-    <string name="title_activity_budget_form">Budget</string>
-    <string name="title_activity_main">Main activity</string>
-    <string name="title_activity_budget_monitering">Budget activi</string>
-    <string name="title_activity_budget_monitoring_records">Bud monitor</string>
+    <string-array name="age_category_array">
+        <item></item>
+        <item>Below 18 years</item>
+        <item>18 to 29 years</item>
+        <item>30 to 35 years</item>
+        <item>Above 35 years</item>
+    </string-array>
+
+    <string-array name="region_array">
+        <item></item>
+        <item>Western</item>
+        <item>Northern</item>
+        <item>Eastern</item>
+        <item>Central</item>
+    </string-array>
+
+    <string-array name="district_array">
+        <item></item>
+        <item>Arua</item>
+        <item>Alebtong</item>
+        <item>Bulisa</item>
+        <item>Gulu</item>
+        <item>Kamuli</item>
+        <item>Kibaale</item>
+        <item>Lira</item>
+        <item>Nakasongola</item>
+        <item>Oyam</item>
+    </string-array>
+
+    <string-array name="sub_county_array">
+        <item></item>
+        <item>Aleka</item>
+        <item>Alebtong</item>
+        <item>Aloi</item>
+        <item>Apala</item>
+        <item>Barr</item>
+        <item>Bungatira</item>
+        <item>Bugulumbya</item>
+        <item>Biso</item>
+        <item>Bulisa</item>
+        <item>Dadamu</item>
+        <item>Kamuli</item>
+        <item>Kakoge</item>
+        <item>Kagadi Town Council</item>
+        <item>Kagadi</item>
+        <item>Kigwera</item>
+        <item>Kisansya</item>
+        <item>Kitoba</item>
+        <item>Kyadondo</item>
+        <item>Nangabo</item>
+        <item>Nabwikulu</item>
+        <item>Nawanyago</item>
+        <item>Nakasongola</item>
+        <item>Malongo</item>
+        <item>Oluko</item>
+        <item>Ogur</item>
+        <item>Omoro</item>
+        <item>Oyam town Council</item>
+        <item>Otwal</item>
+        <item>Patiko</item>
+        <item>Wabinyonyi</item>
+    </string-array>
+
+    <string-array name="gener_array">
+        <item></item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="level_of_education_array">
+        <item></item>
+        <item>Primary</item>
+        <item>O Level</item>
+        <item>A Level</item>
+        <item>Tertiary</item>
+        <item>Diploma</item>
+        <item>University</item>
+    </string-array>
+
+    <string-array name="boolean_array">
+        <item></item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="rating_array">
+        <item></item>
+        <item>Very bad</item>
+        <item>Bad</item>
+        <item>Fair</item>
+        <item>Good</item>
+        <item>Very good</item>
+    </string-array>
+
+    <string-array name="quoter">
+        <item></item>
+        <item>first_quater</item>
+        <item>second_quater</item>
+        <item>third_quater</item>
+        <item>forth_quater</item>
+    </string-array>
+
+    <string-array name="health_education_service_array">
+        <item></item>
+        <item>Youth Counseling</item>
+        <item>Health education</item>
+        <item>Testing and treatment for sexually transmitted infections</item>
+        <item>HIV VCT</item>
+        <item>Contraceptive information and services</item>
+    </string-array>
+
+    <string-array name="education_service_array">
+        <item></item>
+        <item>School infrastructures i.e. class rooms and toilet facilities etc.</item>
+        <item>Quality of school staff i.e. teachers</item>
+        <item>Equipped school library and teaching facilities</item>
+    </string-array>
+
+    <string-array name="agric_service_array">
+        <item></item>
+        <item>Seeds</item>
+        <item>Pesticides</item>
+        <item>Fertilizers</item>
+        <item>Advisory services</item>
+        <item>Market linkages</item>
+        <item>Water for production</item>
+        <item>Agricultural mechanization</item>
+        <item>Access to Credit and capital</item>
+        <item>Agricultural Extension services</item>
+        <item>value addition tools at the sub county</item>
+        <item>Support to address challenges of climate change</item>
+        <item>Capacity building opportunities in various agriculture value chains</item>
+    </string-array>
+
+    <string-array name="quarter">
+        <item></item>
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+    </string-array>
+
+    <string-array name="school_display_budget">
+        <item></item>
+        <item>School notice board</item>
+        <item>Head teacher’s office</item>
+        <item>Staff room</item>
+        <item>Not displayed</item>
+    </string-array>
+
+    <string name="title_activity_agric_list">Records</string>
+    <string name="show_records">Show records</string>
+    <string name="agecategory">Age Category*</string>
+    <string name="key_id">Key id</string>
+    <string name="region">Region*</string>
+    <string name="district">District*</string>
+    <string name="subcounty">Sub-county*</string>
+    <string name="parish">Parish*</string>
+    <string name="phone_id">phone_id</string>
+    <string name="staffname">staffName</string>
+    <string name="date_recorded">date_recorded</string>
+    <string name="agric_service_best">Agric_service_best</string>
+    <string name="agric_service_reason">agric_service_reason</string>
+    <string name="agric_service_worst">agric_service_worst</string>
+    <string name="agric_service_reason_worst">agric_service_reason_worst</string>
+    <string name="agric_service_problem">Agric_service_problem</string>
+    <string name="agric_service_reason_problem">Agric_service_reason_problem</string>
+    <string name="gender">Gender*</string>
+    <string name="regions">Region*</string>
+    <string name="districts">District*</string>
+    <string name="sub_county">Sub-county*</string>
+    <string name="_1_in_your_region_district_or_sub_county_which_agricultural_service_has_been_the_best">1. In your region, district or sub county; which agricultural service has been the best?</string>
+    <string name="_4_what_do_you_see_as_the_single_biggest_problem_facing_agriculture_in_your_sub_county_district_or_region_which_the_government_needs_to_address">4. What do you see as the single biggest problem facing agriculture in your sub county, district or region which the government needs to address?</string>
+    <string name="_5_what_is_your_proposed_priority">5. What is your proposed priority?</string>
+    <string name="_4_which_of_the_following_agricultural_services_have_you_used_in_the_last_three_months">4.Which of the following Agricultural services have you used in the last three months?</string>
+    <string name="any_other_comments_and_suggestions">Any other comments and suggestions?</string>
+    <string name="_3_what_do_you_see_as_the_single_biggest_problem_facing_agriculture_in_your_sub_county_district_or_region_which_the_government_needs_to_address">3. What do you see as the single biggest problem facing agriculture in your sub county, district or region which the government needs to address?</string>
+    <string name="age_category">Age category*</string>
+    <string name="staff_name">Name of Monitor/YGB3</string>
+    <string name="title_activity_front"> </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_medical_form">Health</string>
+    <string name="level_of_education">Level of Education</string>
+    <string name="_1_in_your_sub_county_do_the_public_health_facilities_at_all_levels_have_established_and_functional_youth_health_services">1. In your sub county, do the public health facilities at all levels have established any functional youth health services?</string>
+    <string name="if_yes_in_your_sub_county_have_you_utilized_the_youth_health_services_at_the_public_health_facilities">2. If yes, in your sub county, have you utilized the youth health services at the public health facilities?</string>
+    <string name="reason">Reason</string>
+    <string name="if_yes_in_your_sub_county_please_rate_the_functionality_of_the_youth_services_of_your_public_health_facility">3. If yes, in your sub county; please rate the functionality of the youth services of your public health facility</string>
+    <string name="in_your_sub_county_which_service_at_your_public_health_facility_would_you_rate_as_the_best">4. In your sub county, which service at your public health facility would you rate as the best?</string>
+    <string name="in_your_sub_county_which_service_at_your_public_health_facility_would_you_rate_as_the_worst">5. In your sub county, which service at your public health facility would you rate as the worst?</string>
+    <string name="_6_which_services_at_your_public_health_facility_need_to_be_prioritized_to_benefit_the_youth_for_more_budget_allocation_in_2019_2020">6. Which services at your public health facility need to be prioritized to benefit the youth for more budget allocation in 2019/2020?</string>
+    <string name="_7_in_your_sub_county_are_there_schools_which_provide_use_or_upe_education">1. In your sub county, are there schools that provide USE or UPE education?</string>
+    <string name="_8_in_your_sub_county_which_services_have_been_the_best_in_the_use_and_upe_schools">2. In your sub county, which services have been the best in the USE and UPE schools?</string>
+    <string name="_9_in_your_sub_county_which_services_have_been_the_worst_in_the_use_and_upe_schools">3. In your sub county, which services have been the worst in the USE and UPE schools?</string>
+    <string name="ok">OK</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="clearall">Clear all</string>
+    <string name="emptystring" />
+    <string name="listofservices">List of services</string>
+    <string name="title_activity_medical_record">Health Records</string>
+    <string name="title_activity_education">Education</string>
+    <string name="_10_which_use_and_upe_budget_support_needs_to_be_prioritized_for_more_budget_allocation_in_financial_year_2019_2020">10. Which USE and UPE budget support needs to be prioritized for more budget allocation in financial year 2019/2020?</string>
+    <string name="title_activity_education_record">Education Record</string>
+    <string name="tusiimesam_gmail_com">tusiimesam@gmail.com</string>
+    <string name="youth_go_budget">Youth Go Budget</string>
+    <string name="title_activity_budget_monitering">Budget allocation</string>
+    <string name="sector">Sector</string>
+    <string name="quoter">Quoter</string>
+    <string name="amount_sent">Amount sent</string>
+    <string name="amount_spent">Amount spent</string>
+    <string name="date_received">Date received</string>
+    <string name="date_of_monitoring">Date of monitoring</string>
+    <string name="title_activity_budget_monitoring_records">Budget allocation records</string>
     <string name="title_activity_polls">Polls</string>
-    <string name="title_activity_poll_answer">PollAnswerActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="title_activity_budget_consutance">Budget</string>
-    <string name="title_activity_local_government">Budget</string>
-    <string name="title_activity_budget_life_cycle">Budge</string>
-    <string name="title_activity_education_sector">Exuc</string>
-    <string name="title_activity_health_sector">Health</string>
-    <string name="title_activity_water_sector">Some more codes</string>
-    <string name="title_activity_social_development">Some codes</string>
-    <string name="title_activity_water_sector_records">Some time</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="polls">Budget polls</string>
+    <string name="synchronise">Synchronise</string>
+    <string name="budget_monitoring">Budget Allocation</string>
+    <string name="budget">Monitoring</string>
+    <string name="poll">Poll</string>
+    <string name="data">Data</string>
+    <string name="records">Records</string>
+    <string name="agriculture">AGRICULTURE</string>
+    <string name="form">Form</string>
+    <string name="title_activity_poll_answer">Respond to poll</string>
+    <string name="title_activity_budget_consutance">Budget Consultation</string>
+    <string name="title_activity_local_government">Local government</string>
+    <string name="structures">Structures</string>
+    <string name="local_government_structure">Local government structure</string>
+    <string name="title_activity_budget_life_cycle">Budget Life Cycle</string>
+    <string name="budget_life_cycle">Budget life cycle</string>
+    <string name="title_activity_education_sector">Education sector</string>
+    <string name="education_tool_title">COMMUNITY BUDGET PERFORMANCE AND SERVICE DELIVERY TRACKING TOOL</string>
+    <string name="financial_year">Financial Year</string>
+    <string name="quarter">Quarter</string>
+    <string name="dd_mm_yyyy">dd/mm/yyyy</string>
+    <string name="village">Village</string>
+    <string name="name_of_monitor">Name of Monitor/YGB1</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="note">Note: This tool is completed with the help of headteacher</string>
+    <string name="name_of_universal_primary_education_upe_school">1. Name of Universal Primary Education (UPE) school</string>
+    <string name="save_seducation_sector">Save Education sector</string>
+    <string name="school_details">2) SCHOOL DETAILS</string>
+    <string name="school_name">School Name</string>
+    <string name="category">Category</string>
+    <string name="male">Male|</string>
+    <string name="female">Female|</string>
+    <string name="male_pwds">Male PWDS|</string>
+    <string name="female_pwds">Female PWDS</string>
+    <string name="teachers">Teachers</string>
+    <string name="pupil_enrollment">Pupil Enrollment</string>
+    <string name="number_of_p7_pupils">Number of P7 pupils</string>
+    <string name="no_of_pupils_dropping_out_of_school">No of pupils dropping out of school *</string>
+    <string name="at_the_time_of_monitoring">*-at the time of monitoring</string>
+    <string name="why_children_are_dropping_out_of_school">2.1) If dropout is registered, please indicate the reasons why children are dropping out of school</string>
+    <string name="budget_information">3) BUDGET INFORMATION</string>
+    <string name="budgeted_funds_receipts_and_release_dates">Budgeted funds, receipts and release dates</string>
+    <string name="grants">Grants | </string>
+    <string name="approved_budgets">Approved budgets | </string>
+    <string name="budget_released">Budget released (Actual) | </string>
+    <string name="date_withdrawn">Date Withdrawn | </string>
+    <string name="capitation_grant">Capitation grant </string>
+    <string name="school_facilitation_grant_sfg">School Facilitation Grant (SFG)</string>
+    <string name="school_display_budget">3.1) Does the school display budget information for public viewing in any of the following areas? -Please request for institution bank statement as evidence. (Tick where appropriate)</string>
+    <string name="state_the_period_to_which_the_budget_information_relates">3.2) State the period to which the budget information relates? (e.g FY 2018/19 Quarter one)</string>
+    <string name="termly_performance">4) P.7 TERMLY PERFORMANCE</string>
+    <string name="grade">Grade</string>
+    <string name="grade_1">Grade 1</string>
+    <string name="grade_2">Grade 2</string>
+    <string name="grade_3">Grade 3</string>
+    <string name="last_grade">Last Grade</string>
+    <string name="current_terms_performance">4.1) How is the current terms performance when compared to last term’s?</string>
+    <string name="reason_attributable">4.2) What reason is attributable to the answer (in 4.1 above)</string>
+    <string name="sanitation_in_the_school">5. SANITATION IN THE SCHOOL</string>
+    <string name="facility">Facility</string>
+    <string name="no_of_blocks">No. of Blocks</string>
+    <string name="no_of_stances">No. of Stances</string>
+    <string name="male_stances_pupils">Male Stances (Pupils)</string>
+    <string name="female_stances_pupils">Female Stances (Pupils)</string>
+    <string name="male_stances_teachers">Male Stances (Teachers)</string>
+    <string name="female_stances_teachers">Female Stances (Teachers)</string>
+    <string name="mixed_teachers">Mixed (Teachers)</string>
+    <string name="functional">Functional</string>
+    <string name="none_functional">None functional</string>
+    <string name="toilet">Toilet</string>
+    <string name="latrine">Latrine</string>
+    <string name="vip_latrine">VIP Latrine</string>
+    <string name="female_changing_rooms">Female changing rooms</string>
+    <string name="boys_urinals">Urinals for boys</string>
+    <string name="are_latrines_accessible_to_pupils">5.1) Are the school toilet/latrine facilities accessible to pupils with disabilities?</string>
+    <string name="how_accessible_are_the_facilities_accessible_to_pupils_with_pupils_with_disabilities">5.2) If yes, how accessible are the facilities accessible to pupils with pupils with disabilities?</string>
+    <string name="functional_water_point_within_or_nearby_the_school">5.3) Is there a functional water point within or nearby the school?</string>
+    <string name="estimate_distance">(Estimate distance)</string>
+    <string name="other_school_infrustructure">6.0) OTHER SCHOOL INFRUSTRUCTURE</string>
+    <string name="permanent_class_room_blocks">6.1) How many permanent class room blocks are at the school?</string>
+    <string name="how_many_desks_are_in_school">6.2) How many desks are in the school at the time of the visit?</string>
+    <string name="pupil_desk_ratio">6.3) What is the pupil desk ratio?</string>
+    <string name="staffing_of_the_school">7.0) STAFFING OF THE SCHOOL:</string>
+    <string name="number_of_teachers_enrolled">Total No of teachers enrolled</string>
+    <string name="number_of_teacher_present">No of teachers present at time of visit</string>
+    <string name="number_of_teacher_on_payroll">No. of Teachers accessing payroll</string>
+    <string name="please_validate_information_with_human_resource_staff_register_or_personnel_files_resident_at_the_school">Please validate information with Human Resource staff register or personnel files resident at the school.</string>
+    <string name="what_is_the_teacher_pupil_ratio">7.1) What is the teacher pupil ratio?</string>
+    <string name="senior_woman_teacher">7.2) Does the school have a senior woman teacher?</string>
+    <string name="senior_woman_teacher_offer_support_to_girls_regard_to_counselling">7.3 How often does the senior woman teacher offer support to girls in school in regard to counselling and health services in regard to their participation in school?</string>
+    <string name="oversight_and_school_monitoring">8) OVERSIGHT AND SCHOOL MONITORING</string>
+    <string name="school_Inspector_and_or_health_Inspector_visit_school">8.1) How often does School Inspector and or Health Inspector visit the school?</string>
+    <string name="When_was_the_last_time_the_School_Inspector_and_or_Health_Inspector_visited_the_school">8.2) When was the last time the School Inspector and or Health Inspector visited the school</string>
+    <string name="does_the_school_have_a_management_committee">8.3) Does the school have a Management Committee?</string>
+    <string name="if_yes_how_often_do_they_meet">8.4) If Yes, how often do they meet?</string>
+    <string name="or_specify">Or Specify</string>
+    <string name="is_the_school_management_committee_trained">8.5 Is the school management committee trained?</string>
+    <string name="list_any_other_observations_or_challenges">List any other observations or challenges</string>
+    <string-array name="current_terms_performance">
+        <item></item>
+        <item>Good</item>
+        <item>Bad</item>
+        <item>Same</item>
+    </string-array>
+
+    <string-array name="yes_no">
+        <item></item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="how_accessible_are_the_facilities_accessible_to_pupils_with_pupils_with_disabilities">
+        <item></item>
+        <item>Ramps</item>
+        <item>Specialized PWD toilets/latrines</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="if_yes_how_often_do_they_meet">
+        <item></item>
+        <item>Monthly</item>
+        <item>Termly</item>
+    </string-array>
+
+    <string-array name="is_the_school_management_committee_trained">
+        <item></item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>Not Sure</item>
+    </string-array>
+    <string name="title_activity_health_sector">HealthSectorActivity</string>
+    <string name="community_budget_performance_and_service_delivery_tracking_tool">COMMUNITY BUDGET PERFORMANCE AND SERVICE DELIVERY TRACKING TOOL</string>
+    <string name="note_this_tool_is_completed_with_help_of_health_officer_in_charge">Note: This tool is completed with help of health officer in charge</string>
+    <string name="name_and_grade_of_health_center">a) Name and Grade of Health Center</string>
+    <string name="number_of_outpatient_opd_attendance_during_the_quarter">b) Number of Outpatient OPD attendance during the Quarter</string>
+    <string name="number_of_inpatient_attendances_during_the_quarter">c) Number of inpatient attendances during the quarter</string>
+    <string name="budget_information_and_transparency">1) BUDGET INFORMATION AND TRANSPARENCY</string>
+    <string name="recurrent">Recurrent</string>
+    <string name="development">SOCIAL DEVELOPMENT</string>
+    <string name="health_facility_display_budget_information">1.1) Does the health facility display budget information for public viewing in any of the following areas?</string>
+    <string name="period_to_which_the_budget_information">1.2) State the period to which the budget information relates? (e.g. FY 2018/19 Quarter One)</string>
+    <string name="availability_of_maternity_services_staff_and_facilities">2) AVAILABILITY OF MATERNITY SERVICES, STAFF AND FACILITIES</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="maternity_ward">Maternity ward</string>
+    <string name="general_ward">General ward</string>
+    <string name="delivery_beds">Delivery beds</string>
+    <string name="family_planning_services">Family planning services</string>
+    <string name="hiv_counselling_testing_and_treatment">HIV counselling, testing and treatment</string>
+    <string name="pmtct">PMTCT</string>
+    <string name="immunization">Immunization</string>
+    <string name="youth_friendly_corners">Youth friendly corners</string>
+    <string name="vaccination_for_hep_b">Vaccination for HEP B</string>
+    <string name="how_many_deliveries_occurred_in_previous_quarter">2.1 How many deliveries occurred in previous quarter?</string>
+    <string name="no_of_deliveries">No of deliveries</string>
+    <string name="live">Live</string>
+    <string name="still">Still</string>
+    <string name="children_immunized_with_the_pentavalent_vaccine">2.2) How many children were immunized with the pentavalent Vaccine in the previous quarter?</string>
+    <string name="adolescent_srh_services_at_heath_facility">3.0) ADOLESCENT SRH SERVICES AT HEATH FACILITY</string>
+    <string name="facility_open_during_hours_that_are_convenient_for_adolescents">3.1) Is the facility open during hours that are convenient for adolescents — both female and male (particularly in the evenings or at the weekend)?</string>
+    <string name="are_srh_services_offered_for_free">3.2 Are SRH services offered for free?</string>
+    <string name="adolescents_privacy">If both adults and adolescents are treated in the facility, is there a separate, discreet, entrance for adolescents to ensure their privacy?</string>
+    <string name="counseling_and_treatment_rooms_allow_for_privacy">3.4) Do counseling and treatment rooms allow for privacy (both visual and auditory)?</string>
+    <string name="code_of_conduct_in_place">3.5) Is there a Code of Conduct in place for staff at the health facility?</string>
+    <string name="transparent_confidential_mechanism_for_adolescents_to_submit_complaints">3.6) Is there a transparent, confidential mechanism for adolescents to submit complaints or feedback about SRH services at the facility?</string>
+    <string name="have_providers_been_trained_to_provide_adolescent_friendly_services">3.7) Have providers been trained to provide adolescent-friendly services?</string>
+    <string name="have_all_staff_been_oriented_to_providing_confidential_adolescent_friendly_services">3.8) Have all staff been oriented to providing confidential adolescent-friendly services? (Receptionist, security guards, cleaners, etc.)</string>
+    <string name="staff_demonstrate_respect_when_interacting_with_adolescents">3.9) Do the staff demonstrate respect when interacting with adolescents?</string>
+    <string name="providers_ensure_the_clients_privacy_and_confidentiality">3.10) Do the providers ensure the clients’ privacy and confidentiality?</string>
+    <string name="providers_set_aside_sufficient_time_for_client_provider_interaction">3.11) Do the providers set aside sufficient time for client-provider interaction?</string>
+    <string name="peer_educators_or_peer_counselors_available">3.12) Are peer educators or peer counselors available?</string>
+    <string name="health_providers_assessed_using_quality_standard_checklists">3.13) Are health providers assessed using quality standard checklists?</string>
+    <string name="adolescents_female_and_male_play_a_role_in_the_operation_of_the_health_facility">3.14) Do adolescents (female and male) play a role in the operation of the health facility?</string>
+    <string name="adolescents_involved_in_monitoring_the_quality_of_srh_service_provision">3.15) Are adolescents involved in monitoring the quality of SRH service provision?</string>
+    <string name="can_adolescents_be_seen_in_the_facility_without_the_consent_of_their_parents_or_spouses">3.16) Can adolescents be seen in the facility without the consent of their parents or spouses?</string>
+    <string name="wide_range_of_srh_services_available">3.17) Is a wide range of SRH services available? Eg (contraceptives/Family Planning, B. STI treatment and prevention, C. HIV counseling and testing, ante- and post-natal care, delivery care). List the available services.</string>
+    <string name="written_guidelines_for_providing_adolescent_services">3.18) Are there written guidelines for providing adolescent services?</string>
+    <string name="condoms_available_to_both_young_men_and_young_women">3.19) Are condoms available to both young men and young women?</string>
+    <string name="educational_materials">3.20) Are there SRH educational materials, posters or job aids on site, which are designed to reach adolescents?</string>
+    <string name="are_referral_mechanisms_in_place_for_medical_emergencies">3.21) Are referral mechanisms in place? (For medical emergencies, for mental health and psychosocial support, etc.)</string>
+    <string name="sanitation_at_the_health_facility">4.0) SANITATION AT THE HEALTH FACILITY</string>
+    <string name="sanitation_facility">Sanitation facility</string>
+    <string name="number_of_blocks">Number of Blocks</string>
+    <string name="number_of_stances">Number of stances</string>
+    <string name="male_patient_stances">Male patient stances</string>
+    <string name="female_patient_stances">Female patient stances</string>
+    <string name="health_facility_male_staff">Health facility male staff</string>
+    <string name="health_facility_female_staff">Health facility Female staff</string>
+    <string name="health_facility_mixed_staff">Health facility mixed staff</string>
+    <string name="not_functional">Not functional</string>
+    <string name="female_change_rooms">Female change rooms</string>
+    <string name="health_facility_toilet_latrine_accessible_to_patients_with_disabilities">4.1) Are the health facility toilet/latrine facilities accessible to patients with disabilities?</string>
+    <string name="pwd_friendly_facilities_does_the_health_center">4.2) If yes, which of these PWD friendly facilities does the health center/hospital have?</string>
+    <string name="water_at_the_health_facility">5.0) WATER AT THE HEALTH FACILITY</string>
+    <string name="water_point">Water point</string>
+    <string name="number">Number</string>
+    <string name="non_functional">Non Functional</string>
+    <string name="borehole">Borehole</string>
+    <string name="tap">Tap</string>
+    <string name="water_tank">Water tank</string>
+    <string name="water_point_accessible_to_pwds">5.1) Is the water point accessible to PWDs?</string>
+    <string name="facility_have_a_functional_water_within_nearby">5.2) Does the facility have a functional water point within or nearby?</string>
+    <string name="estimated_distance">Estimated distance</string>
+    <string name="handwashing_facility_installed_at_the_health_facility">5.3) Handwoshing facility installed at the health facility?</string>
+    <string name="oversight_role_hc_management_committee">6) OVERSIGHT ROLE (HC Management Committee)</string>
+    <string name="health_unit_management_committee_exist">6.1) Does the Health Unit Management Committee (HUMC) exist?</string>
+    <string name="last_visit_of_suport_supervisor">6.3 When was the last time the Support Supervision Team and or Health Inspector visited the HC? (please check visitors’ book and copy of support supervision report)</string>
+    <string name="staffing">7.0) STAFFING</string>
+    <string name="staffing_of_health_center">7.1) Staffing of Health Center (Break down staff available)</string>
+    <string name="staff">Staff</string>
+    <string name="staffing_ceiling">Staffing Ceiling</string>
+    <string name="total_no_of_staff">Total No of staff</string>
+    <string name="no_of_staff_present">No of staff present</string>
+    <string name="medical_staff">Medical staff</string>
+    <string name="non_medical">Non-medical</string>
+    <string name="please_validate_information_with_human_resource_staff_register_or_personnel_files_resident_at_the_hc">Please validate information with Human Resource staff register or personnel files resident at the HC.</string>
+    <string name="reasons_for_the_absent_staff">7.2) Reasons for the absent staff</string>
+    <string name="last_date_of_medical_staff_performance_appraisal">7.3) Last date of medical staff performance appraisal</string>
+    <string name="number_of_staff_appraised">7.4) Number of staff appraised</string>
+    <string name="medical_supplies">8.0) MEDICAL SUPPLIES</string>
+    <string name="did_the_hc_receive_a_medical_supplies_consignment_from_national_medical_stores_in_this_quarter">8.1) Did the HC receive a medical supplies Consignment from National Medical Stores in this quarter?</string>
+    <string name="if_yes_please_provide_date_as_per_delivery_note">8.1) If Yes, please provide date as per delivery note</string>
+    <string name="list_the_essential_drugs_that_are_out_of_stock">8.2) List the essential drugs that are out of stock</string>
+    <string name="name_of_the_essential_drug_out_of_stock">Name of the essential drug out of stock</string>
+    <string name="stock_required">Stock required</string>
+    <string name="_1">1</string>
+    <string name="when_did_the_health_center_last_drugs_consignment_get_finished">8.3) When did the Health Center last drugs consignment get finished?</string>
+    <string name="number_of_medical_equipment_bought">8.4) Number of medical equipment bought</string>
+    <string name="does_have_an_ambulance">8.5) Does have an ambulance?</string>
+    <string name="if_no_how_are_referrals_handled">8.6) If no, how are referrals handled?</string>
+    <string name="list_any_other_observations_or_challenges_hc">9.0) Challenges/other observations of Health care provision in this facility</string>
+    <string name="save">Save data</string>
+    <string-array name="health_facility_display_budget_information">
+        <item></item>
+        <item>Health facility notice board</item>
+        <item>In charge’s or Facility Admin. Office</item>
+        <item>Not displayed</item>
+    </string-array>
+
+    <string-array name="pwd">
+        <item></item>
+        <item>Ramps</item>
+        <item>Specialized toilets/latrines</item>
+        <item>None</item>
+        <item>Others (specify)</item>
+    </string-array>
+    <string name="title_activity_water_sector">Water and Sanitation Sector</string>
+    <string name="this_tool_can_be_completed_with_help_of_the_water_sanitation_and_environment_office_department">This tool can be completed with help of the water, sanitation and environment office /department</string>
+    <string name="division_have_water_sanitation">1) Does your office / sub-county/Division have water, sanitation, and environment related services priority areas for the current financial year</string>
+    <string name="if_no_why">If No why</string>
+    <string name="what_are_the_water_sanitationt_protection_activities_taking_place_in_the_sub_county">2) What are the water, sanitation and environment protection activities taking place in the sub-county/division? (obtain list and locations)</string>
+    <string name="are_there_rural_safe_water_point_sources_constructed">3) Are there rural safe water point sources constructed (Shallow Wells, boreholes)</string>
+    <string name="clean_and_safe_water_accessibility">4) Clean and safe water accessibility</string>
+    <string name="area_in_the_sub_county">Area in the Sub-county</string>
+    <string name="water_source">Water source</string>
+    <string name="no_water_source_available">No water source available</string>
+    <string name="do_the_rural_water_point_sources_have_user_committees">5) Do the rural water point sources have user committees?</string>
+    <string name="are_there_any_wetlands_demarcated_or_protected">6) Are there any wetlands demarcated or protected</string>
+    <string name="name_area_with_wetland_degradation">6.1 Name area with wetland degradation</string>
+    <string name="wetland_under_destruction">Wetland under destruction</string>
+    <string name="name_of_the_sub_county_village">Name of the Sub-county/village</string>
+    <string name="what_are_the_tree_planting_programs_known_in_the_area">6.2) What are the tree planting programs known in the area</string>
+    <string name="title_activity_social_development">Social Development</string>
+    <string name="budget_receipt_date">2) Budget receipt date</string>
+    <string name="expected_or_approved">Expected or Approved</string>
+    <string name="community_mobilization">Community Mobilization</string>
+    <string name="other_eg_fal_ylp_uwep">Other eg FAL/YLP/UWEP</string>
+    <string name="are_the_women_empowerment_programs_functional">3) Are the women empowerment programs functional?</string>
+    <string name="if_yes_how_many_women_have_been_supported">If yes how many women have been supported (obtain list)</string>
+    <string name="name_of_the_women_group_village_or_sub_county">Name of the Women Group Village or Sub-county</string>
+    <string name="number_of_males">Number of Males</string>
+    <string name="number_of_females">Number of Females</string>
+    <string name="is_the_youth_livelihood_program_running">4) Is the youth livelihood program running?</string>
+    <string name="if_yes_how_many_youths_have_been_supported">If yes how many youths have been supported (obtain list of youth groups)</string>
+    <string name="name_of_the_youth_group">Name of the youth Group</string>
+    <string name="village_or_sub_county">Village or Sub-county</string>
+    <string name="number_of_group_members_males">Number of group members Males</string>
+    <string name="number_of_female_group_members">Number of Female group members</string>
+    <string name="amount_received">Amount received</string>
+    <string name="how_many_adult_literacy_training_sessions_have_been_conducted_in_this_quarter">5) How many Adult literacy training sessions have been conducted in this quarter? (obtain schedule and contact)</string>
+    <string name="learners_trained">learners trained</string>
+    <string name="mention_any_other_challenges_or_observations_affecting_social_development_sector">6) Mention any other challenges or observations affecting social development sector</string>
+    <string name="district_budget_information">District Budget information (District department)</string>
+    <string name="department">Department</string>
+    <string name="approved_budget">Approved budget</string>
+    <string name="percentage_share">%ge share</string>
+    <string name="administration">Administration</string>
+    <string name="finance">Finance</string>
+    <string name="statutory_bodies">Statutory Bodies</string>
+    <string name="production_and_marketing">Production and Marketing</string>
+    <string name="health">Health</string>
+    <string name="education">Education</string>
+    <string name="roads_and_engineering">Roads and Engineering</string>
+    <string name="water">WATER AND SANITATION</string>
+    <string name="natural_resources">Natural Resources</string>
+    <string name="community_based_services">Community Based Services</string>
+    <string name="planning">Planning</string>
+    <string name="internal_audit">Internal Audit</string>
+    <string name="trade_industry_and_local_development">Trade, Industry and Local Development</string>
+    <string name="total">Total</string>
+    <string name="wage">Wage</string>
+    <string name="non_wage_recurrent">Non-Wage Recurrent</string>
+    <string name="domestic_development">Domestic Development</string>
+    <string name="ext_financing">Ext. Financing</string>
+    <string name="community_budget_wish_list">Community budget Wish-list</string>
+    <string name="district_or_sector">District or Sector</string>
+    <string name="service_centre">Service centre</string>
+    <string name="community_needs">Community needs/wishes (services lacking in the community)</string>
+    <string name="note_this_tool_is_completed_with_help_of_sub_county_production_agriculture_community_development_officer">Note: This tool is completed with help of Sub-county production/agriculture /community development officer</string>
+    <string name="does_the_sub_county_division_have_a_substantive_agricultural_extension_worker">1) Does the sub-county/Division have a substantive agricultural extension worker?</string>
+    <string name="extension_services">Extension services</string>
+    <string name="number_of_field_visits_for_farmer_support_conducted_during_the_quarter">2.1 Number of field visits for farmer support conducted during the quarter</string>
+    <string name="advisory_demonstration_community">2.2 Are there any advisory demonstration community/ meetings you conducted during the quarter by the extension worker?</string>
+    <string name="if_yes_how_many_during_the_quarter">2.3 If yes How many during the quarter</string>
+    <string name="mention_the_areas_where_the_meetings_or_workshops_were_held">2.4 Mention the areas (Cells/ villages or parishes) where the meetings or workshops were held</string>
+    <string name="if_none_what_are_the_reasons_for_not_conducting_the_community_meetings_on_farming">2.5 If none, what are the reasons for not conducting the community meetings on farming</string>
+    <string name="_3_0_extension_services">3.0 EXTENSION SERVICES</string>
+    <string name="are_there_any_advisory_services">3.1 Are there any advisory services you have extended to individual farmers during the quarter? (Obtain schedule)</string>
+    <string name="if_yes_how_many_were_done_during_the_quarter">3.2) If yes How many were done during the quarter</string>
+    <string name="mention_the_areas_where_the_visits_were_made">3.3 Mention the areas (Cells/ villages or parishes) where the visits were made</string>
+    <string name="number_of_farmers_visited_for_advisory_services">3.4 Number of farmers visited for advisory services during the quarter (get contacts and address of at least two farmers visited)</string>
+    <string name="what_are_the_reasons_for_not_conducting_the_farmer_advisory_services_visits">3.5 If none, what are the reasons for not conducting the farmer advisory services visits</string>
+    <string name="distribution_of_inputs_owc">4.0 DISTRIBUTION OF INPUTS (OWC)</string>
+    <string name="have_you_given_any_agriculture_inputs_and_livestock">4.1 Have you given any Agriculture inputs and livestock from Operation wealth creation and or otherwise during the quarter?</string>
+    <string name="if_yes_what_types_of_inputs_and_livestock">4.2 If yes what types of inputs and livestock were provided during the quarter (provide list of some of the recipients) for the different inputs</string>
+    <string name="inputs_or_planting_materials">Inputs or planting materials</string>
+    <string name="male_that_received_input">Male that received Input</string>
+    <string name="female_that_received_input">Female that received input</string>
+    <string name="sub_county_or_village">Sub-county or village</string>
+    <string name="if_non_what_are_the_reasons_for_not_providing_farmers_with_agriculture_inputs_and_livestock_during_the_quarter">4.3) If non, what are the reasons for not providing farmers with agriculture inputs and livestock during the quarter</string>
+    <string name="give_any_other_observations_or_challenges">Give any other observations or challenges</string>
+    <string name="title_activity_water_sector_records">Water sector records</string>
 </resources>
