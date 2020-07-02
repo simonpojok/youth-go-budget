@@ -24,6 +24,7 @@ import com.kosalgeek.genasync12.EachExceptionsHandler;
 import com.kosalgeek.genasync12.PostResponseAsyncTask;
 
 import org.ygba.youthgobudget.database.DatabaseHelper;
+import org.ygba.youthgobudget.utils.Goapphelper;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -31,7 +32,7 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.util.ArrayList;
 
-import static com.youthgobudget.Goapphelper.IP_ADDRESS;
+import static org.ygba.youthgobudget.utils.Goapphelper.IP_ADDRESS;
 
 public class FrontActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
