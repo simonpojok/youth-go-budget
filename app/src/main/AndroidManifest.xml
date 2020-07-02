@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EducationRecordActivity"
+        <activity android:name=".FrontActivity"></activity>
+        <activity
+            android:name=".EducationRecordActivity"
             android:label="@string/title_activity_education"
             android:parentActivityName=".FrontActivity"
             android:theme="@style/AppTheme.NoActionBar">
