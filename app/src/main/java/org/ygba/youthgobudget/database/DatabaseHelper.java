@@ -99,7 +99,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_TABLE = "CREATE TABLE " + TABLE + "(" + KEY_ID + " INTEGER PRIMARY KEY, " +
-                REGION + " VARCHAR(200), " +
+                REGION + " VARCHAR(200) NULL , " +
                 "" + DISTRICT + " VARCHAR(100) NULL, " +
                 "" + SUBCOUNTY + " VARCHAR(200)  NULL, " +
                 "" + PARISH + " VARCHAR(100) NULL, " +
@@ -226,7 +226,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "name_of_the_sub_county_village_six VARCHAR(50) NULL, wetland_under_destruction_six VARCHAR(10) NULL, what_are_the_tree_planting_programs_known_in_the_area VARCHAR(100) NULL, " +
                 "phone_id VARCHAR(200) NULL)";
 
-        String SOCIALdEVELOPMENT = "CREATE TABLE social_development(record_is INTEGER PRIMARY KEY, financial_year varchar(20) null, quarter varchar(5) null," +
+        String SOCIALdEVELOPMENT = "CREATE TABLE social_development(record_is INTEGER PRIMARY KEY, financial_year varchar(20) , quarter varchar(5) null," +
                 "date varchar(20) null, region varchar(20) null, district varchar(50) null, subcounty varchar(50) null, parish varchar(50) null, village varchar(50) null, " +
                 "name_of_monitor varchar(100) null, phone_number varchar(20) null, budget_receipt_date varchar(20) null, community_mobilization_expected_or_approved varchar(100) null, " +
                 "community_mobilization_amount_received varchar(10) null, community_mobilization_date_received varchar(20) null, community_mobilization_date_withdrawn varchar(20) null," +
