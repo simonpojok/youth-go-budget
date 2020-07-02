@@ -32,4 +32,5 @@
     <string name="title_activity_local_government">Budget</string>
     <string name="title_activity_budget_life_cycle">Budge</string>
     <string name="title_activity_education_sector">Exuc</string>
+    <string name="title_activity_health_sector">Health</string>
 </resources>

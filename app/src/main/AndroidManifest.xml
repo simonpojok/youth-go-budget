@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HealthSectorActivity"></activity>
         <activity
+            android:name=".HealthSectorActivity"
+            android:label="@string/title_activity_health_sector"
+            android:parentActivityName=".FrontActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.ygba.youthgobudget.FrontActivity" />
+        </activity>        <activity
             android:name=".EducationSectorActivity"
             android:label="@string/title_activity_education_sector"
             android:parentActivityName=".FrontActivity"
