@@ -9,11 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EducationActivity"
+        <activity
+            android:name=".MedicalRecordActivity"
+            android:label="@string/title_activity_medical_record"
+            android:parentActivityName=".FrontActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.ygba.youthgobudget.FrontActivity" />
+        </activity>
+        <activity
+            android:name=".EducationActivity"
             android:label="@string/title_activity_education"
             android:parentActivityName=".FrontActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.ygba.youthgobudget.FrontActivity" />
