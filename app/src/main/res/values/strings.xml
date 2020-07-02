@@ -14,4 +14,5 @@
     <string name="title_activity_medical_form">Medical form</string>
     <string name="title_activity_front">Fromt activity</string>
     <string name="title_activity_agric_list"><![CDATA["        <activity             android:name=\".AgricListActivity\"             android:label=\"@string/title_activity_agric_list\"             android:parentActivityName=\".FrontActivity\"             android:theme=\"@style/AppTheme.NoActionBar\">             <meta-data                 android:name=\"android.support.PARENT_ACTIVITY\"                 android:value=\"com.youthgobudget.FrontActivity\" />         </activity>"]]></string>
+    <string name="title_activity_budget_form">Budget</string>
 </resources>
