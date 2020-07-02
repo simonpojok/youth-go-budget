@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.login.PollAnswerActivity"
+            android:label="@string/title_activity_poll_answer"></activity>
+        <activity
             android:name=".PollsActivity"
             android:label="@string/title_activity_polls"
             android:parentActivityName=".FrontActivity"
@@ -17,7 +20,8 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.ygba.youthgobudget.FrontActivity" />
-        </activity>        <activity
+        </activity>
+        <activity
             android:name=".BudgetMonitoringRecordsActivity"
             android:label="@string/title_activity_budget_monitoring_records"
             android:parentActivityName=".FrontActivity"
