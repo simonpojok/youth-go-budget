@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SpashActivity"></activity>
         <activity
             android:name=".BudgetFormActivity"
             android:label="@string/title_activity_budget_form"
@@ -17,7 +18,8 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.ygba.youthgobudget.FrontActivity" />
-        </activity>        <activity
+        </activity>
+        <activity
             android:name=".AgricListActivity"
             android:label="@string/title_activity_agric_list"
             android:parentActivityName=".FrontActivity"
@@ -66,7 +68,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.ygba.youthgobudget.FrontActivity" />
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
