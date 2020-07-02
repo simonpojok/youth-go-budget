@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.youthgobudget.EducationRecordActivity"
+    tools:context="org.ygba.youthgobudget.EducationRecordActivity"
     tools:showIn="@layout/activity_education_record">
 
     <RelativeLayout

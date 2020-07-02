@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#30d5c8"
-    tools:context="com.youthgobudget.SpashActivity">
+    tools:context="org.ygba.youthgobudget.SplashActivity">
 
     <ImageView
         android:layout_width="match_parent"
