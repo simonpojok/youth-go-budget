@@ -17,7 +17,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.youthgobudget.FrontActivity" />
+                android:value="org.ygba.youthgobudget.FrontActivity" />
         </activity>
         <activity
             android:name=".MainActivity"
