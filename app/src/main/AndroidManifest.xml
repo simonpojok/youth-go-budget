@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BudgetMoniteringActivity"></activity>
-        <activity android:name=".SplashActivity">
+        <activity
+            android:name=".BudgetMoniteringActivity"
+            android:label="@string/title_activity_budget_monitering"
+            android:parentActivityName=".FrontActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.ygba.youthgobudget.FrontActivity" />
+        </activity>        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
