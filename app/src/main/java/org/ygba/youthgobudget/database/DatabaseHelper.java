@@ -99,7 +99,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_TABLE = "CREATE TABLE " + TABLE + "(" + KEY_ID + " INTEGER PRIMARY KEY, " +
-                REGION + " VARCHAR(200) NULL, " +
+                REGION + " VARCHAR(200), " +
                 "" + DISTRICT + " VARCHAR(100) NULL, " +
                 "" + SUBCOUNTY + " VARCHAR(200)  NULL, " +
                 "" + PARISH + " VARCHAR(100) NULL, " +
